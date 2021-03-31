@@ -14,6 +14,17 @@ This connector supports tracking:
 
 This connector will correlate with other systems like Hive, HDFS to track the life-cycle of data in Atlas.
 
+Changelog
+===
+date | author | comment
+--- | --- | ---
+30 march 2021 | Kenny Bui | added src/main/java files for atlas client. modifed RestAtlasClient accordingly. also modified pom.xml for dependencies, shading, assembly.
+31 march 2021 | Kenny Bui | modify atlas-application.properties. add ApplicationProperties.java, AuthenticationUtil.java, and commons-configuration dependency in pom.xml
+
+Azure: Databricks & Purview
+===
+refer to [readme](./databricks/readme.md) in databricks folder.
+
 How To Build
 ==========
 
@@ -22,7 +33,7 @@ To use this connector, you will require a latest version of Spark (Spark 2.3+), 
 To build this project, please execute:
 
 ```shell
-mvn package -DskipTests
+mvn clean package -DskipTests
 ```
 
 `mvn package` will assemble all the required dependencies and package into an uber jar.
@@ -41,18 +52,18 @@ How To Use
 To use it, you will need to make this jar accessible in Spark Driver, also configure
 
 ```
-spark.extraListeners=com.hortonworks.spark.atlas.SparkAtlasEventTracker
-spark.sql.queryExecutionListeners=com.hortonworks.spark.atlas.SparkAtlasEventTracker
-spark.sql.streaming.streamingQueryListeners=com.hortonworks.spark.atlas.SparkAtlasStreamingQueryEventTracker
+spark.extraListeners=com.sparkview.spark.atlas.SparkAtlasEventTracker
+spark.sql.queryExecutionListeners=com.sparkview.spark.atlas.SparkAtlasEventTracker
+spark.sql.streaming.streamingQueryListeners=com.sparkview.spark.atlas.SparkAtlasStreamingQueryEventTracker
 ```
 
 For example, when you're using spark-shell, you can start the Spark like:
 
 ```shell
-bin/spark-shell --jars spark-atlas-connector_2.11-0.1.0-SNAPSHOT.jar \
---conf spark.extraListeners=com.hortonworks.spark.atlas.SparkAtlasEventTracker \
---conf spark.sql.queryExecutionListeners=com.hortonworks.spark.atlas.SparkAtlasEventTracker \
---conf spark.sql.streaming.streamingQueryListeners=com.hortonworks.spark.atlas.SparkAtlasStreamingQueryEventTracker
+bin/spark-shell --jars spark-atlas-connector_2.11-<sac-version>.jar \
+--conf spark.extraListeners=com.sparkview.spark.atlas.SparkAtlasEventTracker \
+--conf spark.sql.queryExecutionListeners=com.sparkview.spark.atlas.SparkAtlasEventTracker \
+--conf spark.sql.streaming.streamingQueryListeners=com.sparkview.spark.atlas.SparkAtlasStreamingQueryEventTracker
 ```
 
 Also make sure atlas configuration file `atlas-application.properties` is in the Driver's classpath. For example, putting this file into `<SPARK_HOME>/conf`.
@@ -85,10 +96,10 @@ When running on cluster node, you will also need to distribute this keytab, belo
 
 ```shell
  ./bin/spark-submit --class <class_name> \
-  --jars spark-atlas-connector_2.11-0.1.0-SNAPSHOT.jar \
-  --conf spark.extraListeners=com.hortonworks.spark.atlas.SparkAtlasEventTracker \
-  --conf spark.sql.queryExecutionListeners=com.hortonworks.spark.atlas.SparkAtlasEventTracker \
-  --conf spark.sql.streaming.streamingQueryListeners=com.hortonworks.spark.atlas.SparkAtlasStreamingQueryEventTracker \
+  --jars spark-atlas-connector_2.11-<sac-version>.jar \
+  --conf spark.extraListeners=com.sparkview.spark.atlas.SparkAtlasEventTracker \
+  --conf spark.sql.queryExecutionListeners=com.sparkview.spark.atlas.SparkAtlasEventTracker \
+  --conf spark.sql.streaming.streamingQueryListeners=com.sparkview.spark.atlas.SparkAtlasStreamingQueryEventTracker \
   --master yarn-cluster \
   --principal spark-test@EXAMPLE.COM \
   --keytab ./spark.headless.keytab \

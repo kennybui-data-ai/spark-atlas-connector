@@ -21,9 +21,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>com.hortonworks.spark</groupId>
+    <groupId>com.sparkview.spark</groupId>
     <artifactId>spark-atlas-connector-main_2.11</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
+    <!-- <version>0.1.0-SNAPSHOT</version> -->
+    <version>0.1.1</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
@@ -32,7 +33,7 @@
 
   <dependencies>
     <dependency>
-      <groupId>com.hortonworks.spark</groupId>
+      <groupId>com.sparkview.spark</groupId>
       <artifactId>spark-atlas-connector_${scala.binary.version}</artifactId>
       <version>${project.version}</version>
     </dependency>
@@ -84,38 +85,60 @@
               <relocations>
                 <relocation>
                   <pattern>org.apache.hadoop.hbase</pattern>
-                  <shadedPattern>com.hortonworks.spark.atlas.shade.org.apache.hbase</shadedPattern>
+                  <shadedPattern>com.sparkview.spark.atlas.shade.org.apache.hbase</shadedPattern>
                 </relocation>
                 <relocation>
                   <pattern>org.apache.htrace</pattern>
-                  <shadedPattern>com.hortonworks.spark.atlas.shade.org.apache.htrace</shadedPattern>
+                  <shadedPattern>com.sparkview.spark.atlas.shade.org.apache.htrace</shadedPattern>
                 </relocation>
                 <relocation>
                   <pattern>org.apache.commons.configuration</pattern>
-                  <shadedPattern>com.hortonworks.spark.atlas.shade.org.apache.commons.configuration</shadedPattern>
+                  <shadedPattern>com.sparkview.spark.atlas.shade.org.apache.commons.configuration</shadedPattern>
                 </relocation>
-                <relocation>
+                <!-- <relocation>
                   <pattern>com.sun.jersey</pattern>
-                  <shadedPattern>com.hortonworks.spark.atlas.shade.com.sun.jersey</shadedPattern>
-                </relocation>
+                  <shadedPattern>com.sparkview.spark.atlas.shade.com.sun.jersey</shadedPattern>
+                </relocation> -->
                 <relocation>
                   <pattern>org.codehaus.jackson</pattern>
-                  <shadedPattern>com.hortonworks.spark.atlas.shade.org.codehaus.jackson</shadedPattern>
+                  <shadedPattern>com.sparkview.spark.atlas.shade.org.codehaus.jackson</shadedPattern>
                 </relocation>
                 <relocation>
                   <pattern>javax.ws.rs</pattern>
-                  <shadedPattern>com.hortonworks.spark.atlas.javax.ws.rs</shadedPattern>
+                  <shadedPattern>com.sparkview.spark.atlas.javax.ws.rs</shadedPattern>
                 </relocation>
-                <relocation>
+                <!-- <relocation>
                   <pattern>com.fasterxml.jackson</pattern>
-                  <shadedPattern>com.hortonworks.spark.atlas.com.fasterxml.jackson</shadedPattern>
-                </relocation>
+                  <shadedPattern>com.sparkview.spark.atlas.com.fasterxml.jackson</shadedPattern>
+                </relocation> -->
 
               </relocations>
             </configuration>
           </execution>
         </executions>
       </plugin>
+
+      <!-- uber jar -->
+      <!-- <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>3.3.0</version>
+        <configuration>
+          <descriptorRefs>
+            <descriptorRef>jar-with-dependencies</descriptorRef>
+          </descriptorRefs>
+        </configuration>
+        <executions>
+          <execution>
+              <id>make-assembly</id>
+              <phase>package</phase>
+              <goals>
+                <goal>single</goal>
+              </goals>
+          </execution>
+        </executions>
+      </plugin> -->
+
     </plugins>
   </build>
 

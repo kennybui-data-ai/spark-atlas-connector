@@ -6,3 +6,8 @@ target
 metastore_db
 tmp
 dependency-reduced-pom.xml
+*.project
+*.settings
+*.classpath
+# *.jar
+databricks/country_vaccinations_output

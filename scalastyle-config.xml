@@ -229,12 +229,12 @@ This file is divided into 3 sections:
 
   <check level="error" class="org.scalastyle.scalariform.ImportOrderChecker" enabled="true">
     <parameters>
-      <parameter name="groups">java,scala,3rdParty,spark,hortonworks</parameter>
+      <parameter name="groups">java,scala,3rdParty,spark,sparkview</parameter>
       <parameter name="group.java">javax?\..*</parameter>
       <parameter name="group.scala">scala\..*</parameter>
       <parameter name="group.3rdParty">(?!org\.apache\.spark\.).*</parameter>
       <parameter name="group.spark">org\.apache\.spark\..*</parameter>
-      <parameter name="group.spark">com\.hortonworks\..*</parameter>
+      <parameter name="group.spark">com\.sparkview\..*</parameter>
     </parameters>
   </check>
 

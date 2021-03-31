@@ -1,0 +1,1193 @@
+m
+spark.executor.tempDirectory=/local_disk0/tmp
+spark.extraListeners=com.sparkview.spark.atlas.SparkAtlasEventTracker
+spark.files.fetchFailure.unRegisterOutputOnHost=true
+spark.files.overwrite=true
+spark.files.useFetchCache=false
+spark.hadoop.databricks.dbfs.client.version=v2
+spark.hadoop.databricks.s3commit.client.sslTrustAll=false
+spark.hadoop.fs.abfs.impl=shaded.databricks.v20180920_b33d810.org.apache.hadoop.fs.azurebfs.AzureBlobFileSystem
+spark.hadoop.fs.abfs.impl.disable.cache=true
+spark.hadoop.fs.abfss.impl=shaded.databricks.v20180920_b33d810.org.apache.hadoop.fs.azurebfs.SecureAzureBlobFileSystem
+spark.hadoop.fs.abfss.impl.disable.cache=true
+spark.hadoop.fs.adl.impl=com.databricks.adl.AdlFileSystem
+spark.hadoop.fs.adl.impl.disable.cache=true
+spark.hadoop.fs.azure.skip.metrics=true
+spark.hadoop.fs.s3.impl=com.databricks.s3a.S3AFileSystem
+spark.hadoop.fs.s3a.connection.maximum=200
+spark.hadoop.fs.s3a.fast.upload=true
+spark.hadoop.fs.s3a.fast.upload.default=true
+spark.hadoop.fs.s3a.impl=com.databricks.s3a.S3AFileSystem
+spark.hadoop.fs.s3a.multipart.size=10485760
+spark.hadoop.fs.s3a.multipart.threshold=104857600
+spark.hadoop.fs.s3a.threads.max=136
+spark.hadoop.fs.s3n.impl=com.databricks.s3a.S3AFileSystem
+spark.hadoop.fs.wasb.impl=shaded.databricks.org.apache.hadoop.fs.azure.NativeAzureFileSystem
+spark.hadoop.fs.wasb.impl.disable.cache=true
+spark.hadoop.fs.wasbs.impl=shaded.databricks.org.apache.hadoop.fs.azure.NativeAzureFileSystem
+spark.hadoop.fs.wasbs.impl.disable.cache=true
+spark.hadoop.hive.server2.enable.doAs=false
+spark.hadoop.hive.server2.idle.operation.timeout=7200000
+spark.hadoop.hive.server2.idle.session.timeout=900000
+spark.hadoop.hive.server2.keystore.password=*********(redacted)
+spark.hadoop.hive.server2.keystore.path=/databricks/keys/jetty-ssl-driver-keystore.jks
+spark.hadoop.hive.server2.session.check.interval=60000
+spark.hadoop.hive.server2.thrift.http.cookie.auth.enabled=false
+spark.hadoop.hive.server2.thrift.http.port=10000
+spark.hadoop.hive.server2.transport.mode=http
+spark.hadoop.hive.server2.use.SSL=true
+spark.hadoop.hive.warehouse.subdir.inherit.perms=false
+spark.hadoop.mapred.output.committer.class=com.databricks.backend.daemon.data.client.DirectOutputCommitter
+spark.hadoop.mapreduce.fileoutputcommitter.algorithm.version=2
+spark.hadoop.parquet.block.size.row.check.max=10
+spark.hadoop.parquet.block.size.row.check.min=10
+spark.hadoop.parquet.memory.pool.ratio=0.5
+spark.hadoop.parquet.page.size.check.estimate=false
+spark.hadoop.parquet.page.verify-checksum.enabled=true
+spark.hadoop.parquet.page.write-checksum.enabled=true
+spark.hadoop.spark.driverproxy.customHeadersToProperties=*********(redacted)
+spark.hadoop.spark.sql.parquet.output.committer.class=org.apache.spark.sql.parquet.DirectParquetOutputCommitter
+spark.hadoop.spark.sql.sources.outputCommitterClass=com.databricks.backend.daemon.data.client.MapReduceDirectOutputCommitter
+spark.hadoop.spark.thriftserver.closeSessionHeaderName=X-Databricks-SqlService-CloseSession
+spark.home=/databricks/spark
+spark.logConf=true
+spark.master=spark://10.139.64.7:7077
+spark.metrics.conf=/databricks/spark/conf/metrics.properties
+spark.r.backendConnectionTimeout=604800
+spark.r.numRBackendThreads=1
+spark.rdd.compress=true
+spark.repl.class.outputDir=/local_disk0/tmp/repl/spark-2779862271113087980-dc2637b7-261a-4325-945d-5efeeef81b83
+spark.rpc.message.maxSize=256
+spark.scheduler.listenerbus.eventqueue.capacity=20000
+spark.scheduler.mode=FAIR
+spark.serializer.objectStreamReset=100
+spark.shuffle.manager=SORT
+spark.shuffle.memoryFraction=0.2
+spark.shuffle.reduceLocality.enabled=false
+spark.shuffle.service.enabled=true
+spark.shuffle.service.port=4048
+spark.sparkr.use.daemon=false
+spark.speculation=false
+spark.speculation.multiplier=3
+spark.speculation.quantile=0.9
+spark.sql.allowMultipleContexts=false
+spark.sql.hive.convertCTAS=true
+spark.sql.hive.convertMetastoreParquet=true
+spark.sql.hive.metastore.jars=/databricks/hive/*
+spark.sql.hive.metastore.sharedPrefixes=org.mariadb.jdbc,com.mysql.jdbc,org.postgresql,com.microsoft.sqlserver,microsoft.sql.DateTimeOffset,microsoft.sql.Types,com.databricks,com.codahale,com.fasterxml.jackson,shaded.databricks
+spark.sql.hive.metastore.version=0.13.0
+spark.sql.parquet.cacheMetadata=true
+spark.sql.parquet.compression.codec=snappy
+spark.sql.queryExecutionListeners=com.sparkview.spark.atlas.SparkAtlasEventTracker
+spark.sql.sources.commitProtocolClass=com.databricks.sql.transaction.directory.DirectoryAtomicCommitProtocol
+spark.sql.streaming.checkpointFileManagerClass=com.databricks.spark.sql.streaming.DatabricksCheckpointFileManager
+spark.sql.streaming.stopTimeout=15s
+spark.sql.streaming.streamingQueryListeners=com.sparkview.spark.atlas.SparkAtlasStreamingQueryEventTracker
+spark.sql.ui.retainedExecutions=100
+spark.sql.warehouse.dir=*********(redacted)
+spark.storage.blockManagerTimeoutIntervalMs=300000
+spark.storage.memoryFraction=0.5
+spark.streaming.driver.writeAheadLog.allowBatching=true
+spark.streaming.driver.writeAheadLog.closeFileAfterWrite=true
+spark.task.reaper.enabled=true
+spark.task.reaper.killTimeout=60s
+spark.ui.port=40001
+spark.worker.cleanup.enabled=false
+21/03/30 22:24:13 WARN MetricsSystem: Using default name SparkStatusTracker for source because neither spark.metrics.namespace nor spark.app.id is set.
+21/03/30 22:24:13 INFO log: Logging initialized @5157ms
+21/03/30 22:24:14 INFO Server: jetty-9.3.27.v20190418, build timestamp: 2019-04-18T18:11:38Z, git hash: d3e249f86955d04bc646bb620905b7c1bc596a8d
+21/03/30 22:24:14 INFO Server: Started @5799ms
+21/03/30 22:24:14 INFO AbstractConnector: Started ServerConnector@4e140497{HTTP/1.1,[http/1.1]}{10.139.64.7:40001}
+21/03/30 22:24:14 INFO Utils: Successfully started service 'SparkUI' on port 40001.
+21/03/30 22:24:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@188a5fc2{/jobs,null,AVAILABLE,@Spark}
+21/03/30 22:24:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@54af3cb9{/jobs/json,null,AVAILABLE,@Spark}
+21/03/30 22:24:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@236fdf{/jobs/job,null,AVAILABLE,@Spark}
+21/03/30 22:24:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@653fb8d1{/jobs/job/json,null,AVAILABLE,@Spark}
+21/03/30 22:24:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@48581a3b{/stages,null,AVAILABLE,@Spark}
+21/03/30 22:24:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@531ec978{/stages/json,null,AVAILABLE,@Spark}
+21/03/30 22:24:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@93501be{/stages/stage,null,AVAILABLE,@Spark}
+21/03/30 22:24:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3c25cfe1{/stages/stage/json,null,AVAILABLE,@Spark}
+21/03/30 22:24:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1d3c112a{/stages/pool,null,AVAILABLE,@Spark}
+21/03/30 22:24:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2a140ce5{/stages/pool/json,null,AVAILABLE,@Spark}
+21/03/30 22:24:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1f71194d{/storage,null,AVAILABLE,@Spark}
+21/03/30 22:24:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@db99785{/storage/json,null,AVAILABLE,@Spark}
+21/03/30 22:24:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@70716259{/storage/rdd,null,AVAILABLE,@Spark}
+21/03/30 22:24:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@7a083b96{/storage/rdd/json,null,AVAILABLE,@Spark}
+21/03/30 22:24:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6da4feeb{/environment,null,AVAILABLE,@Spark}
+21/03/30 22:24:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2c604965{/environment/json,null,AVAILABLE,@Spark}
+21/03/30 22:24:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@57f8951a{/executors,null,AVAILABLE,@Spark}
+21/03/30 22:24:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6c17c0f8{/executors/json,null,AVAILABLE,@Spark}
+21/03/30 22:24:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@260e3837{/executors/threadDump,null,AVAILABLE,@Spark}
+21/03/30 22:24:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@88b76f2{/executors/threadDump/json,null,AVAILABLE,@Spark}
+21/03/30 22:24:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1b4872bc{/executors/heapHistogram,null,AVAILABLE,@Spark}
+21/03/30 22:24:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@498a612d{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+21/03/30 22:24:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1e1237ab{/static,null,AVAILABLE,@Spark}
+21/03/30 22:24:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@23310248{/,null,AVAILABLE,@Spark}
+21/03/30 22:24:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@c2df90e{/api,null,AVAILABLE,@Spark}
+21/03/30 22:24:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3c19592c{/jobs/job/kill,null,AVAILABLE,@Spark}
+21/03/30 22:24:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@60e1d87c{/stages/stage/kill,null,AVAILABLE,@Spark}
+21/03/30 22:24:14 INFO SparkUI: Bound SparkUI to 10.139.64.7, and started at http://10.139.64.7:40001
+21/03/30 22:24:14 WARN FairSchedulableBuilder: Fair Scheduler configuration file not found so jobs will be scheduled in FIFO order. To use fair scheduling, configure pools in fairscheduler.xml or set spark.scheduler.allocation.file to a file that contains the configuration.
+21/03/30 22:24:14 INFO FairSchedulableBuilder: Created default pool: default, schedulingMode: FIFO, minShare: 0, weight: 1
+21/03/30 22:24:14 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://10.139.64.7:7077...
+21/03/30 22:24:15 INFO TransportClientFactory: Successfully created connection to /10.139.64.7:7077 after 44 ms (0 ms spent in bootstraps)
+21/03/30 22:24:15 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20210330222415-0000
+21/03/30 22:24:15 INFO TaskSchedulerImpl: Task preemption enabled.
+21/03/30 22:24:15 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 38255.
+21/03/30 22:24:15 INFO NettyBlockTransferService: Server created on 10.139.64.7:38255
+21/03/30 22:24:15 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/03/30 22:24:15 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 10.139.64.7, 38255, None)
+21/03/30 22:24:15 INFO BlockManagerMasterEndpoint: Registering block manager 10.139.64.7:38255 with 3.3 GB RAM, BlockManagerId(driver, 10.139.64.7, 38255, None)
+21/03/30 22:24:15 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 10.139.64.7, 38255, None)
+21/03/30 22:24:15 INFO BlockManager: external shuffle service port = 4048
+21/03/30 22:24:15 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 10.139.64.7, 38255, None)
+21/03/30 22:24:15 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6de7778f{/metrics/json,null,AVAILABLE,@Spark}
+21/03/30 22:24:15 INFO ApplicationProperties: Loading atlas-application.properties from file:/databricks/spark/conf/atlas-application.properties
+21/03/30 22:24:15 INFO ApplicationProperties: Using graphdb backend 'janus'
+21/03/30 22:24:15 INFO ApplicationProperties: Using storage backend 'hbase2'
+21/03/30 22:24:15 INFO ApplicationProperties: Using index backend 'solr'
+21/03/30 22:24:15 INFO ApplicationProperties: Atlas is running in MODE: PROD.
+21/03/30 22:24:15 INFO ApplicationProperties: Setting solr-wait-searcher property 'true'
+21/03/30 22:24:15 INFO ApplicationProperties: Setting index.search.map-name property 'false'
+21/03/30 22:24:15 INFO ApplicationProperties: Setting atlas.graph.index.search.max-result-set-size = 500000
+21/03/30 22:24:15 INFO ApplicationProperties: Property (set to default) atlas.graph.cache.db-cache = true
+21/03/30 22:24:15 INFO ApplicationProperties: Property (set to default) atlas.graph.cache.db-cache-clean-wait = 20
+21/03/30 22:24:15 INFO ApplicationProperties: Property (set to default) atlas.graph.cache.db-cache-size = 0.5
+21/03/30 22:24:15 INFO ApplicationProperties: Property (set to default) atlas.graph.cache.tx-cache-size = 15000
+21/03/30 22:24:15 INFO ApplicationProperties: Property (set to default) atlas.graph.cache.tx-dirty-size = 120
+21/03/30 22:24:15 INFO AbstractConnector: Stopped Spark@4e140497{HTTP/1.1,[http/1.1]}{10.139.64.7:40001}
+21/03/30 22:24:15 INFO SparkUI: Stopped Spark web UI at http://10.139.64.7:40001
+21/03/30 22:24:15 INFO StandaloneSchedulerBackend: Shutting down all executors
+21/03/30 22:24:15 INFO CoarseGrainedSchedulerBackend$DriverEndpoint: Asking each executor to shut down
+21/03/30 22:24:15 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+21/03/30 22:24:15 INFO MemoryStore: MemoryStore cleared
+21/03/30 22:24:15 INFO BlockManager: BlockManager stopped
+21/03/30 22:24:15 INFO BlockManagerMaster: BlockManagerMaster stopped
+21/03/30 22:24:15 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+21/03/30 22:24:15 INFO SparkContext: Successfully stopped SparkContext
+21/03/30 22:24:15 ERROR SparkContext: Error initializing SparkContext.
+org.apache.spark.SparkException: Exception when registering SparkListener
+	at org.apache.spark.SparkContext.setupAndStartListenerBus(SparkContext.scala:2624)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:612)
+	at com.databricks.backend.daemon.driver.DatabricksILoop$$anonfun$4.apply(DatabricksILoop.scala:344)
+	at com.databricks.backend.daemon.driver.DatabricksILoop$$anonfun$4.apply(DatabricksILoop.scala:344)
+	at com.databricks.backend.daemon.driver.ClassLoaders$.withContextClassLoader(ClassLoaders.scala:29)
+	at com.databricks.backend.daemon.driver.DatabricksILoop$.initializeSharedDriverContext(DatabricksILoop.scala:343)
+	at com.databricks.backend.daemon.driver.DatabricksILoop$.getOrCreateSharedDriverContext(DatabricksILoop.scala:274)
+	at com.databricks.backend.daemon.driver.DriverCorral.com$databricks$backend$daemon$driver$DriverCorral$$driverContext(DriverCorral.scala:177)
+	at com.databricks.backend.daemon.driver.DriverCorral.<init>(DriverCorral.scala:214)
+	at com.databricks.backend.daemon.driver.DriverDaemon.<init>(DriverDaemon.scala:35)
+	at com.databricks.backend.daemon.driver.DriverDaemon$.create(DriverDaemon.scala:173)
+	at com.databricks.backend.daemon.driver.DriverDaemon$.wrappedMain(DriverDaemon.scala:178)
+	at com.databricks.DatabricksMain$$anonfun$main$1.apply$mcV$sp(DatabricksMain.scala:94)
+	at com.databricks.DatabricksMain$$anonfun$main$1.apply(DatabricksMain.scala:93)
+	at com.databricks.DatabricksMain$$anonfun$main$1.apply(DatabricksMain.scala:93)
+	at com.databricks.DatabricksMain$$anonfun$1.apply(DatabricksMain.scala:287)
+	at com.databricks.logging.UsageLogging$$anonfun$recordOperation$1.apply(UsageLogging.scala:428)
+	at com.databricks.logging.UsageLogging$$anonfun$withAttributionContext$1.apply(UsageLogging.scala:238)
+	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:58)
+	at com.databricks.logging.UsageLogging$class.withAttributionContext(UsageLogging.scala:233)
+	at com.databricks.DatabricksMain.withAttributionContext(DatabricksMain.scala:63)
+	at com.databricks.logging.UsageLogging$class.withAttributionTags(UsageLogging.scala:275)
+	at com.databricks.DatabricksMain.withAttributionTags(DatabricksMain.scala:63)
+	at com.databricks.logging.UsageLogging$class.recordOperation(UsageLogging.scala:409)
+	at com.databricks.DatabricksMain.recordOperation(DatabricksMain.scala:63)
+	at com.databricks.DatabricksMain.withStartupProfilingData(DatabricksMain.scala:286)
+	at com.databricks.DatabricksMain.main(DatabricksMain.scala:93)
+	at com.databricks.backend.daemon.driver.DriverDaemon.main(DriverDaemon.scala)
+Caused by: org.apache.atlas.AtlasException: Failed to load application properties
+	at org.apache.atlas.ApplicationProperties.get(ApplicationProperties.java:147)
+	at org.apache.atlas.ApplicationProperties.get(ApplicationProperties.java:100)
+	at com.sparkview.spark.atlas.AtlasClientConf.configuration$lzycompute(AtlasClientConf.scala:24)
+	at com.sparkview.spark.atlas.AtlasClientConf.configuration(AtlasClientConf.scala:24)
+	at com.sparkview.spark.atlas.AtlasClientConf.get(AtlasClientConf.scala:49)
+	at com.sparkview.spark.atlas.AtlasClient$.atlasClient(AtlasClient.scala:120)
+	at com.sparkview.spark.atlas.SparkAtlasEventTracker.<init>(SparkAtlasEventTracker.scala:33)
+	at com.sparkview.spark.atlas.SparkAtlasEventTracker.<init>(SparkAtlasEventTracker.scala:37)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.spark.util.Utils$$anonfun$loadExtensions$1.apply(Utils.scala:2957)
+	at org.apache.spark.util.Utils$$anonfun$loadExtensions$1.apply(Utils.scala:2946)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:241)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:241)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at scala.collection.TraversableLike$class.flatMap(TraversableLike.scala:241)
+	at scala.collection.AbstractTraversable.flatMap(Traversable.scala:104)
+	at org.apache.spark.util.Utils$.loadExtensions(Utils.scala:2946)
+	at org.apache.spark.SparkContext$$anonfun$setupAndStartListenerBus$1.apply(SparkContext.scala:2613)
+	at org.apache.spark.SparkContext$$anonfun$setupAndStartListenerBus$1.apply(SparkContext.scala:2612)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.SparkContext.setupAndStartListenerBus(SparkContext.scala:2612)
+	... 27 more
+Caused by: org.apache.commons.configuration.ConversionException: 'atlas.graph.index.search.solr.wait-searcher' doesn't map to a List object: true, a java.lang.Boolean
+	at org.apache.commons.configuration.AbstractConfiguration.getList(AbstractConfiguration.java:1144)
+	at org.apache.commons.configuration.AbstractConfiguration.getList(AbstractConfiguration.java:1109)
+	at org.apache.commons.configuration.AbstractConfiguration.interpolatedConfiguration(AbstractConfiguration.java:1274)
+	at org.apache.atlas.ApplicationProperties.get(ApplicationProperties.java:142)
+	... 51 more
+21/03/30 22:24:15 INFO SparkContext: SparkContext already stopped.
+21/03/30 22:24:15 ERROR DriverDaemon$: XXX Fatal uncaught exception. Terminating driver.
+org.apache.spark.SparkException: Exception when registering SparkListener
+	at org.apache.spark.SparkContext.setupAndStartListenerBus(SparkContext.scala:2624)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:612)
+	at com.databricks.backend.daemon.driver.DatabricksILoop$$anonfun$4.apply(DatabricksILoop.scala:344)
+	at com.databricks.backend.daemon.driver.DatabricksILoop$$anonfun$4.apply(DatabricksILoop.scala:344)
+	at com.databricks.backend.daemon.driver.ClassLoaders$.withContextClassLoader(ClassLoaders.scala:29)
+	at com.databricks.backend.daemon.driver.DatabricksILoop$.initializeSharedDriverContext(DatabricksILoop.scala:343)
+	at com.databricks.backend.daemon.driver.DatabricksILoop$.getOrCreateSharedDriverContext(DatabricksILoop.scala:274)
+	at com.databricks.backend.daemon.driver.DriverCorral.com$databricks$backend$daemon$driver$DriverCorral$$driverContext(DriverCorral.scala:177)
+	at com.databricks.backend.daemon.driver.DriverCorral.<init>(DriverCorral.scala:214)
+	at com.databricks.backend.daemon.driver.DriverDaemon.<init>(DriverDaemon.scala:35)
+	at com.databricks.backend.daemon.driver.DriverDaemon$.create(DriverDaemon.scala:173)
+	at com.databricks.backend.daemon.driver.DriverDaemon$.wrappedMain(DriverDaemon.scala:178)
+	at com.databricks.DatabricksMain$$anonfun$main$1.apply$mcV$sp(DatabricksMain.scala:94)
+	at com.databricks.DatabricksMain$$anonfun$main$1.apply(DatabricksMain.scala:93)
+	at com.databricks.DatabricksMain$$anonfun$main$1.apply(DatabricksMain.scala:93)
+	at com.databricks.DatabricksMain$$anonfun$1.apply(DatabricksMain.scala:287)
+	at com.databricks.logging.UsageLogging$$anonfun$recordOperation$1.apply(UsageLogging.scala:428)
+	at com.databricks.logging.UsageLogging$$anonfun$withAttributionContext$1.apply(UsageLogging.scala:238)
+	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:58)
+	at com.databricks.logging.UsageLogging$class.withAttributionContext(UsageLogging.scala:233)
+	at com.databricks.DatabricksMain.withAttributionContext(DatabricksMain.scala:63)
+	at com.databricks.logging.UsageLogging$class.withAttributionTags(UsageLogging.scala:275)
+	at com.databricks.DatabricksMain.withAttributionTags(DatabricksMain.scala:63)
+	at com.databricks.logging.UsageLogging$class.recordOperation(UsageLogging.scala:409)
+	at com.databricks.DatabricksMain.recordOperation(DatabricksMain.scala:63)
+	at com.databricks.DatabricksMain.withStartupProfilingData(DatabricksMain.scala:286)
+	at com.databricks.DatabricksMain.main(DatabricksMain.scala:93)
+	at com.databricks.backend.daemon.driver.DriverDaemon.main(DriverDaemon.scala)
+Caused by: org.apache.atlas.AtlasException: Failed to load application properties
+	at org.apache.atlas.ApplicationProperties.get(ApplicationProperties.java:147)
+	at org.apache.atlas.ApplicationProperties.get(ApplicationProperties.java:100)
+	at com.sparkview.spark.atlas.AtlasClientConf.configuration$lzycompute(AtlasClientConf.scala:24)
+	at com.sparkview.spark.atlas.AtlasClientConf.configuration(AtlasClientConf.scala:24)
+	at com.sparkview.spark.atlas.AtlasClientConf.get(AtlasClientConf.scala:49)
+	at com.sparkview.spark.atlas.AtlasClient$.atlasClient(AtlasClient.scala:120)
+	at com.sparkview.spark.atlas.SparkAtlasEventTracker.<init>(SparkAtlasEventTracker.scala:33)
+	at com.sparkview.spark.atlas.SparkAtlasEventTracker.<init>(SparkAtlasEventTracker.scala:37)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.spark.util.Utils$$anonfun$loadExtensions$1.apply(Utils.scala:2957)
+	at org.apache.spark.util.Utils$$anonfun$loadExtensions$1.apply(Utils.scala:2946)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:241)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:241)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at scala.collection.TraversableLike$class.flatMap(TraversableLike.scala:241)
+	at scala.collection.AbstractTraversable.flatMap(Traversable.scala:104)
+	at org.apache.spark.util.Utils$.loadExtensions(Utils.scala:2946)
+	at org.apache.spark.SparkContext$$anonfun$setupAndStartListenerBus$1.apply(SparkContext.scala:2613)
+	at org.apache.spark.SparkContext$$anonfun$setupAndStartListenerBus$1.apply(SparkContext.scala:2612)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.SparkContext.setupAndStartListenerBus(SparkContext.scala:2612)
+	... 27 more
+Caused by: org.apache.commons.configuration.ConversionException: 'atlas.graph.index.search.solr.wait-searcher' doesn't map to a List object: true, a java.lang.Boolean
+	at org.apache.commons.configuration.AbstractConfiguration.getList(AbstractConfiguration.java:1144)
+	at org.apache.commons.configuration.AbstractConfiguration.getList(AbstractConfiguration.java:1109)
+	at org.apache.commons.configuration.AbstractConfiguration.interpolatedConfiguration(AbstractConfiguration.java:1274)
+	at org.apache.atlas.ApplicationProperties.get(ApplicationProperties.java:142)
+	... 51 more
+21/03/30 22:24:16 INFO ShutdownHookManager: Shutdown hook called
+21/03/30 22:24:16 INFO ShutdownHookManager: Deleting directory /local_disk0/tmp/spark-fce757b1-4797-44e1-ab0a-94514190b520
+21/03/30 22:24:16 INFO ShutdownHookManager: Deleting directory /local_disk0/spark-19dd025d-fb76-4bd8-a79d-f9360acb80f2
+21/03/30 22:24:16 INFO ShutdownHookManager: Deleting directory /local_disk0/tmp/spark-015b644e-1c3b-424a-9c79-396c8a5e9db3
+21/03/30 22:38:38 INFO StaticConf$: DB_HOME: /databricks
+21/03/30 22:38:39 INFO DriverDaemon$: ========== driver starting up ==========
+21/03/30 22:38:39 INFO DriverDaemon$: Java: Azul Systems, Inc. 1.8.0_282
+21/03/30 22:38:39 INFO DriverDaemon$: OS: Linux/amd64 4.15.0-1092-azure
+21/03/30 22:38:39 INFO DriverDaemon$: CWD: /databricks/driver
+21/03/30 22:38:39 INFO DriverDaemon$: Mem: Max: 6.3G loaded GCs: PS Scavenge, PS MarkSweep
+21/03/30 22:38:39 INFO DriverDaemon$: Logging multibyte characters: ✓
+21/03/30 22:38:39 INFO DriverDaemon$: 'publicFile' appender in root logger: class com.databricks.logging.RedactionRollingFileAppender
+21/03/30 22:38:39 INFO DriverDaemon$: 'org.apache.log4j.Appender' appender in root logger: class com.codahale.metrics.log4j.InstrumentedAppender
+21/03/30 22:38:39 INFO DriverDaemon$: 'null' appender in root logger: class com.databricks.logging.RequestTracker
+21/03/30 22:38:39 INFO DriverDaemon$: == Modules:
+21/03/30 22:38:39 INFO DriverDaemon$: Starting prometheus metrics log export timer
+21/03/30 22:38:39 INFO DriverDaemon$: Universe Git Hash: 5b5bba772ba23db6c52998c0043e49d46ecd87fb
+21/03/30 22:38:39 INFO DriverDaemon$: Spark Git Hash: 8e5cfd0029136397a208ff700a87d7006fdd380d
+21/03/30 22:38:39 WARN RunHelpers$: Missing tag isolation client: java.util.NoSuchElementException: key not found: TagDefinition(clientType,The client type for a request, used for isolating resources for the request.)
+21/03/30 22:38:39 INFO DatabricksILoop$: Creating throwaway interpreter
+21/03/30 22:38:39 INFO SparkConfUtils$: Customize spark config according to file /tmp/custom-spark.conf
+21/03/30 22:38:39 INFO SparkConfUtils$: Respecting spark.executor.extraJavaOptions in system property
+21/03/30 22:38:39 INFO MetastoreMonitor$: Internal internal metastore configured (config=DbMetastoreConfig{host=consolidated-canadacentral-prod-metastore.mysql.database.azure.com, port=3306, dbName=organization5539086989731741, user=OiWT4dGqp5ISPZRH@consolidated-canadacentral-prod-metastore})
+21/03/30 22:38:40 INFO HikariDataSource: metastore-monitor - Starting...
+21/03/30 22:38:40 INFO HikariDataSource: metastore-monitor - Start completed.
+21/03/30 22:38:40 INFO DriverCorral: Creating the driver context
+21/03/30 22:38:40 INFO DatabricksILoop$: Class Server Dir: /local_disk0/tmp/repl/spark-5278490607004910794-6e8a0d0c-8328-41d2-867a-f77f9fd98b0d
+21/03/30 22:38:40 INFO SparkConfUtils$: Customize spark config according to file /tmp/custom-spark.conf
+21/03/30 22:38:40 INFO SparkConfUtils$: Respecting spark.executor.extraJavaOptions in system property
+21/03/30 22:38:40 WARN SparkConf: The configuration key 'spark.akka.frameSize' has been deprecated as of Spark 1.6 and may be removed in the future. Please use the new key 'spark.rpc.message.maxSize' instead.
+21/03/30 22:38:40 INFO SparkContext: Running Spark version 2.4.5
+21/03/30 22:38:40 INFO HikariDataSource: metastore-monitor - Shutdown initiated...
+21/03/30 22:38:40 INFO HikariDataSource: metastore-monitor - Shutdown completed.
+21/03/30 22:38:40 INFO MetastoreMonitor: Metastore healthcheck successful (connection duration = 746 milliseconds)
+21/03/30 22:38:41 WARN SparkConf: Detected deprecated memory fraction settings: [spark.shuffle.memoryFraction, spark.storage.memoryFraction]. As of Spark 1.6, execution and storage memory management are unified. All memory fractions used in the old model are now deprecated and no longer read. If you wish to use the old memory management, you may explicitly enable `spark.memory.useLegacyMode` (not recommended).
+21/03/30 22:38:41 INFO SparkContext: Submitted application: Databricks Shell
+21/03/30 22:38:41 INFO SecurityManager: Changing view acls to: root
+21/03/30 22:38:41 INFO SecurityManager: Changing modify acls to: root
+21/03/30 22:38:41 INFO SecurityManager: Changing view acls groups to: 
+21/03/30 22:38:41 INFO SecurityManager: Changing modify acls groups to: 
+21/03/30 22:38:41 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+21/03/30 22:38:41 INFO Utils: Successfully started service 'sparkDriver' on port 32795.
+21/03/30 22:38:41 INFO SparkEnv: Registering MapOutputTracker
+21/03/30 22:38:41 INFO SparkEnv: Registering BlockManagerMaster
+21/03/30 22:38:41 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+21/03/30 22:38:41 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+21/03/30 22:38:41 INFO DiskBlockManager: Created local directory at /local_disk0/blockmgr-e3809391-d6a8-4f5b-a3d6-9c9b67052546
+21/03/30 22:38:41 INFO MemoryStore: MemoryStore started with capacity 3.3 GB
+21/03/30 22:38:41 INFO SparkEnv: Registering OutputCommitCoordinator
+21/03/30 22:38:41 INFO SparkContext: Spark configuration:
+eventLog.rolloverIntervalSeconds=3600
+spark.akka.frameSize=256
+spark.app.name=Databricks Shell
+spark.cleaner.referenceTracking.blocking=false
+spark.databricks.acl.client=com.databricks.spark.sql.acl.client.SparkSqlAclClient
+spark.databricks.acl.provider=com.databricks.sql.acl.ReflectionBackedAclProvider
+spark.databricks.cloudProvider=Azure
+spark.databricks.clusterSource=UI
+spark.databricks.clusterUsageTags.autoTerminationMinutes=30
+spark.databricks.clusterUsageTags.azureSubscriptionId=9dd2c898-8111-4322-91d6-a039a00bd513
+spark.databricks.clusterUsageTags.cloudProvider=Azure
+spark.databricks.clusterUsageTags.clusterAllTags=[{"key":"Vendor","value":"Databricks"},{"key":"Creator","value":"kenny.bui@slalom.com"},{"key":"ClusterName","value":"spark2-atlas"},{"key":"ClusterId","value":"0118-193839-lens147"},{"key":"Manager","value":"Florian Anshelm"},{"key":"Market","value":"Toronto Data & Analytics"},{"key":"Name","value":"Henry Tsang"},{"key":"Project","value":"Toronto D&A PoC"},{"key":"DatabricksEnvironment","value":"workerenv-5539086989731741"}]
+spark.databricks.clusterUsageTags.clusterAvailability=ON_DEMAND_AZURE
+spark.databricks.clusterUsageTags.clusterCreator=Webapp
+spark.databricks.clusterUsageTags.clusterFirstOnDemand=1
+spark.databricks.clusterUsageTags.clusterGeneration=31
+spark.databricks.clusterUsageTags.clusterId=0118-193839-lens147
+spark.databricks.clusterUsageTags.clusterLogDeliveryEnabled=false
+spark.databricks.clusterUsageTags.clusterLogDestination=
+spark.databricks.clusterUsageTags.clusterMetastoreAccessType=RDS_DIRECT
+spark.databricks.clusterUsageTags.clusterName=spark2-atlas
+spark.databricks.clusterUsageTags.clusterNoDriverDaemon=false
+spark.databricks.clusterUsageTags.clusterNodeType=Standard_DS3_v2
+spark.databricks.clusterUsageTags.clusterNumSshKeys=0
+spark.databricks.clusterUsageTags.clusterOwnerOrgId=5539086989731741
+spark.databricks.clusterUsageTags.clusterOwnerUserId=*********(redacted)
+spark.databricks.clusterUsageTags.clusterPinned=false
+spark.databricks.clusterUsageTags.clusterPythonVersion=2
+spark.databricks.clusterUsageTags.clusterResourceClass=default
+spark.databricks.clusterUsageTags.clusterScalingType=fixed_size
+spark.databricks.clusterUsageTags.clusterSku=STANDARD_SKU
+spark.databricks.clusterUsageTags.clusterSpotBidMaxPrice=-1.0
+spark.databricks.clusterUsageTags.clusterState=Pending
+spark.databricks.clusterUsageTags.clusterStateMessage=Starting Spark
+spark.databricks.clusterUsageTags.clusterTargetWorkers=1
+spark.databricks.clusterUsageTags.clusterWorkers=1
+spark.databricks.clusterUsageTags.containerType=LXC
+spark.databricks.clusterUsageTags.dataPlaneRegion=canadacentral
+spark.databricks.clusterUsageTags.driverContainerId=b77a9f54ae21441fb962832d172bc65d
+spark.databricks.clusterUsageTags.driverContainerPrivateIp=10.139.64.5
+spark.databricks.clusterUsageTags.driverInstanceId=dde3408520c44ddcb14fe7c8cc61129a
+spark.databricks.clusterUsageTags.driverInstancePrivateIp=10.139.0.5
+spark.databricks.clusterUsageTags.driverNodeType=Standard_DS3_v2
+spark.databricks.clusterUsageTags.driverPublicDns=52.138.26.223
+spark.databricks.clusterUsageTags.enableCredentialPassthrough=*********(redacted)
+spark.databricks.clusterUsageTags.enableDfAcls=false
+spark.databricks.clusterUsageTags.enableElasticDisk=true
+spark.databricks.clusterUsageTags.enableJdbcAutoStart=true
+spark.databricks.clusterUsageTags.enableJobsAutostart=true
+spark.databricks.clusterUsageTags.enableLocalDiskEncryption=false
+spark.databricks.clusterUsageTags.enableSqlAclsOnly=false
+spark.databricks.clusterUsageTags.hailEnabled=false
+spark.databricks.clusterUsageTags.instanceWorkerEnvId=workerenv-5539086989731741
+spark.databricks.clusterUsageTags.instanceWorkerEnvNetworkType=default
+spark.databricks.clusterUsageTags.isIMv2Enabled=true
+spark.databricks.clusterUsageTags.isSingleUserCluster=*********(redacted)
+spark.databricks.clusterUsageTags.managedResourceGroup=databricks-rg-yaaf-databricks-i62lgapisrkfs
+spark.databricks.clusterUsageTags.ngrokNpipEnabled=false
+spark.databricks.clusterUsageTags.numPerClusterInitScriptsV2=1
+spark.databricks.clusterUsageTags.numPerGlobalInitScriptsV2=0
+spark.databricks.clusterUsageTags.privateLinkEnabled=false
+spark.databricks.clusterUsageTags.region=canadacentral
+spark.databricks.clusterUsageTags.sparkVersion=6.4.x-esr-scala2.11
+spark.databricks.clusterUsageTags.userProvidedRemoteVolumeCount=*********(redacted)
+spark.databricks.clusterUsageTags.userProvidedRemoteVolumeSizeGb=*********(redacted)
+spark.databricks.clusterUsageTags.userProvidedRemoteVolumeType=*********(redacted)
+spark.databricks.clusterUsageTags.workerEnvironmentId=workerenv-5539086989731741
+spark.databricks.credential.redactor=*********(redacted)
+spark.databricks.delta.logStore.crossCloud.fatal=true
+spark.databricks.delta.multiClusterWrites.enabled=true
+spark.databricks.driverNodeTypeId=Standard_DS3_v2
+spark.databricks.eventLog.dir=eventlogs
+spark.databricks.io.directoryCommit.enableLogicalDelete=false
+spark.databricks.overrideDefaultCommitProtocol=org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol
+spark.databricks.passthrough.adls.gen2.tokenProviderClassName=*********(redacted)
+spark.databricks.passthrough.adls.tokenProviderClassName=*********(redacted)
+spark.databricks.passthrough.glue.credentialsProviderFactoryClassName=*********(redacted)
+spark.databricks.passthrough.glue.executorServiceFactoryClassName=com.databricks.backend.daemon.driver.GlueClientExecutorServiceFactory
+spark.databricks.passthrough.s3a.threadPoolExecutor.factory.class=com.databricks.backend.daemon.driver.aws.S3APassthroughThreadPoolExecutorFactory
+spark.databricks.passthrough.s3a.tokenProviderClassName=*********(redacted)
+spark.databricks.preemption.enabled=true
+spark.databricks.redactor=com.databricks.spark.util.DatabricksSparkLogRedactorProxy
+spark.databricks.secret.envVar.keys.toRedact=*********(redacted)
+spark.databricks.secret.sparkConf.keys.toRedact=*********(redacted)
+spark.databricks.session.share=false
+spark.databricks.sparkContextId=5278490607004910794
+spark.databricks.sqlservice.querylog.client=com.databricks.spark.sqlservice.client.DriverToSqlServiceQueryLogClient
+spark.databricks.tahoe.logStore.aws.class=com.databricks.tahoe.store.MultiClusterLogStore
+spark.databricks.tahoe.logStore.azure.class=com.databricks.tahoe.store.AzureLogStore
+spark.databricks.tahoe.logStore.class=com.databricks.tahoe.store.DelegatingLogStore
+spark.databricks.workerNodeTypeId=Standard_DS3_v2
+spark.databricks.workspace.matplotlibInline.enabled=true
+spark.driver.allowMultipleContexts=false
+spark.driver.extraJavaOptions=-Datlas.conf=/databricks/spark/conf
+spark.driver.host=10.139.64.5
+spark.driver.maxResultSize=4g
+spark.driver.port=32795
+spark.driver.tempDirectory=/local_disk0/tmp
+spark.eventLog.enabled=false
+spark.executor.extraClassPath=*********(redacted)
+spark.executor.extraJavaOptions=-Djava.io.tmpdir=/local_disk0/tmp -XX:ReservedCodeCacheSize=256m -XX:+UseCodeCacheFlushing -Djava.security.properties=/databricks/spark/dbconf/java/extra.security -Djava.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni -XX:-UseContainerSupport -XX:+PrintFlagsFinal -XX:+PrintGCDateStamps -verbose:gc -XX:+PrintGCDetails -Xss4m -Djavax.xml.datatype.DatatypeFactory=com.sun.org.apache.xerces.internal.jaxp.datatype.DatatypeFactoryImpl -Djavax.xml.parsers.DocumentBuilderFactory=com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl -Djavax.xml.parsers.SAXParserFactory=com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl -Djavax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema=com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaFactory -Dorg.xml.sax.driver=com.sun.org.apache.xerces.internal.parsers.SAXParser -Dorg.w3c.dom.DOMImplementationSourceList=com.sun.org.apache.xerces.internal.dom.DOMXSImplementationSourceImpl -Djavax.net.ssl.sessionCacheSize=10000 -Dscala.reflect.runtime.disable.typetag.cache=true -Datlas.conf=/databricks/spark/conf -Ddatabricks.serviceName=spark-executor-1
+spark.executor.id=driver
+spark.executor.memory=7284m
+spark.executor.tempDirectory=/local_disk0/tmp
+spark.extraListeners=com.sparkview.spark.atlas.SparkAtlasEventTracker
+spark.files.fetchFailure.unRegisterOutputOnHost=true
+spark.files.overwrite=true
+spark.files.useFetchCache=false
+spark.hadoop.databricks.dbfs.client.version=v2
+spark.hadoop.databricks.s3commit.client.sslTrustAll=false
+spark.hadoop.fs.abfs.impl=shaded.databricks.v20180920_b33d810.org.apache.hadoop.fs.azurebfs.AzureBlobFileSystem
+spark.hadoop.fs.abfs.impl.disable.cache=true
+spark.hadoop.fs.abfss.impl=shaded.databricks.v20180920_b33d810.org.apache.hadoop.fs.azurebfs.SecureAzureBlobFileSystem
+spark.hadoop.fs.abfss.impl.disable.cache=true
+spark.hadoop.fs.adl.impl=com.databricks.adl.AdlFileSystem
+spark.hadoop.fs.adl.impl.disable.cache=true
+spark.hadoop.fs.azure.skip.metrics=true
+spark.hadoop.fs.s3.impl=com.databricks.s3a.S3AFileSystem
+spark.hadoop.fs.s3a.connection.maximum=200
+spark.hadoop.fs.s3a.fast.upload=true
+spark.hadoop.fs.s3a.fast.upload.default=true
+spark.hadoop.fs.s3a.impl=com.databricks.s3a.S3AFileSystem
+spark.hadoop.fs.s3a.multipart.size=10485760
+spark.hadoop.fs.s3a.multipart.threshold=104857600
+spark.hadoop.fs.s3a.threads.max=136
+spark.hadoop.fs.s3n.impl=com.databricks.s3a.S3AFileSystem
+spark.hadoop.fs.wasb.impl=shaded.databricks.org.apache.hadoop.fs.azure.NativeAzureFileSystem
+spark.hadoop.fs.wasb.impl.disable.cache=true
+spark.hadoop.fs.wasbs.impl=shaded.databricks.org.apache.hadoop.fs.azure.NativeAzureFileSystem
+spark.hadoop.fs.wasbs.impl.disable.cache=true
+spark.hadoop.hive.server2.enable.doAs=false
+spark.hadoop.hive.server2.idle.operation.timeout=7200000
+spark.hadoop.hive.server2.idle.session.timeout=900000
+spark.hadoop.hive.server2.keystore.password=*********(redacted)
+spark.hadoop.hive.server2.keystore.path=/databricks/keys/jetty-ssl-driver-keystore.jks
+spark.hadoop.hive.server2.session.check.interval=60000
+spark.hadoop.hive.server2.thrift.http.cookie.auth.enabled=false
+spark.hadoop.hive.server2.thrift.http.port=10000
+spark.hadoop.hive.server2.transport.mode=http
+spark.hadoop.hive.server2.use.SSL=true
+spark.hadoop.hive.warehouse.subdir.inherit.perms=false
+spark.hadoop.mapred.output.committer.class=com.databricks.backend.daemon.data.client.DirectOutputCommitter
+spark.hadoop.mapreduce.fileoutputcommitter.algorithm.version=2
+spark.hadoop.parquet.block.size.row.check.max=10
+spark.hadoop.parquet.block.size.row.check.min=10
+spark.hadoop.parquet.memory.pool.ratio=0.5
+spark.hadoop.parquet.page.size.check.estimate=false
+spark.hadoop.parquet.page.verify-checksum.enabled=true
+spark.hadoop.parquet.page.write-checksum.enabled=true
+spark.hadoop.spark.driverproxy.customHeadersToProperties=*********(redacted)
+spark.hadoop.spark.sql.parquet.output.committer.class=org.apache.spark.sql.parquet.DirectParquetOutputCommitter
+spark.hadoop.spark.sql.sources.outputCommitterClass=com.databricks.backend.daemon.data.client.MapReduceDirectOutputCommitter
+spark.hadoop.spark.thriftserver.closeSessionHeaderName=X-Databricks-SqlService-CloseSession
+spark.home=/databricks/spark
+spark.logConf=true
+spark.master=spark://10.139.64.5:7077
+spark.metrics.conf=/databricks/spark/conf/metrics.properties
+spark.r.backendConnectionTimeout=604800
+spark.r.numRBackendThreads=1
+spark.rdd.compress=true
+spark.repl.class.outputDir=/local_disk0/tmp/repl/spark-5278490607004910794-6e8a0d0c-8328-41d2-867a-f77f9fd98b0d
+spark.rpc.message.maxSize=256
+spark.scheduler.listenerbus.eventqueue.capacity=20000
+spark.scheduler.mode=FAIR
+spark.serializer.objectStreamReset=100
+spark.shuffle.manager=SORT
+spark.shuffle.memoryFraction=0.2
+spark.shuffle.reduceLocality.enabled=false
+spark.shuffle.service.enabled=true
+spark.shuffle.service.port=4048
+spark.sparkr.use.daemon=false
+spark.speculation=false
+spark.speculation.multiplier=3
+spark.speculation.quantile=0.9
+spark.sql.allowMultipleContexts=false
+spark.sql.hive.convertCTAS=true
+spark.sql.hive.convertMetastoreParquet=true
+spark.sql.hive.metastore.jars=/databricks/hive/*
+spark.sql.hive.metastore.sharedPrefixes=org.mariadb.jdbc,com.mysql.jdbc,org.postgresql,com.microsoft.sqlserver,microsoft.sql.DateTimeOffset,microsoft.sql.Types,com.databricks,com.codahale,com.fasterxml.jackson,shaded.databricks
+spark.sql.hive.metastore.version=0.13.0
+spark.sql.parquet.cacheMetadata=true
+spark.sql.parquet.compression.codec=snappy
+spark.sql.queryExecutionListeners=com.sparkview.spark.atlas.SparkAtlasEventTracker
+spark.sql.sources.commitProtocolClass=com.databricks.sql.transaction.directory.DirectoryAtomicCommitProtocol
+spark.sql.streaming.checkpointFileManagerClass=com.databricks.spark.sql.streaming.DatabricksCheckpointFileManager
+spark.sql.streaming.stopTimeout=15s
+spark.sql.streaming.streamingQueryListeners=com.sparkview.spark.atlas.SparkAtlasStreamingQueryEventTracker
+spark.sql.ui.retainedExecutions=100
+spark.sql.warehouse.dir=*********(redacted)
+spark.storage.blockManagerTimeoutIntervalMs=300000
+spark.storage.memoryFraction=0.5
+spark.streaming.driver.writeAheadLog.allowBatching=true
+spark.streaming.driver.writeAheadLog.closeFileAfterWrite=true
+spark.task.reaper.enabled=true
+spark.task.reaper.killTimeout=60s
+spark.ui.port=40001
+spark.worker.cleanup.enabled=false
+21/03/30 22:38:41 WARN MetricsSystem: Using default name SparkStatusTracker for source because neither spark.metrics.namespace nor spark.app.id is set.
+21/03/30 22:38:41 INFO log: Logging initialized @5195ms
+21/03/30 22:38:42 INFO Server: jetty-9.3.27.v20190418, build timestamp: 2019-04-18T18:11:38Z, git hash: d3e249f86955d04bc646bb620905b7c1bc596a8d
+21/03/30 22:38:42 INFO Server: Started @5791ms
+21/03/30 22:38:42 INFO AbstractConnector: Started ServerConnector@4e140497{HTTP/1.1,[http/1.1]}{10.139.64.5:40001}
+21/03/30 22:38:42 INFO Utils: Successfully started service 'SparkUI' on port 40001.
+21/03/30 22:38:42 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@188a5fc2{/jobs,null,AVAILABLE,@Spark}
+21/03/30 22:38:42 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@54af3cb9{/jobs/json,null,AVAILABLE,@Spark}
+21/03/30 22:38:42 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@236fdf{/jobs/job,null,AVAILABLE,@Spark}
+21/03/30 22:38:42 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@653fb8d1{/jobs/job/json,null,AVAILABLE,@Spark}
+21/03/30 22:38:42 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@48581a3b{/stages,null,AVAILABLE,@Spark}
+21/03/30 22:38:42 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@531ec978{/stages/json,null,AVAILABLE,@Spark}
+21/03/30 22:38:42 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@93501be{/stages/stage,null,AVAILABLE,@Spark}
+21/03/30 22:38:42 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3c25cfe1{/stages/stage/json,null,AVAILABLE,@Spark}
+21/03/30 22:38:42 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1d3c112a{/stages/pool,null,AVAILABLE,@Spark}
+21/03/30 22:38:42 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2a140ce5{/stages/pool/json,null,AVAILABLE,@Spark}
+21/03/30 22:38:42 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1f71194d{/storage,null,AVAILABLE,@Spark}
+21/03/30 22:38:42 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@db99785{/storage/json,null,AVAILABLE,@Spark}
+21/03/30 22:38:42 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@70716259{/storage/rdd,null,AVAILABLE,@Spark}
+21/03/30 22:38:42 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@7a083b96{/storage/rdd/json,null,AVAILABLE,@Spark}
+21/03/30 22:38:42 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6da4feeb{/environment,null,AVAILABLE,@Spark}
+21/03/30 22:38:42 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2c604965{/environment/json,null,AVAILABLE,@Spark}
+21/03/30 22:38:42 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@57f8951a{/executors,null,AVAILABLE,@Spark}
+21/03/30 22:38:42 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6c17c0f8{/executors/json,null,AVAILABLE,@Spark}
+21/03/30 22:38:42 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@260e3837{/executors/threadDump,null,AVAILABLE,@Spark}
+21/03/30 22:38:42 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@88b76f2{/executors/threadDump/json,null,AVAILABLE,@Spark}
+21/03/30 22:38:42 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1b4872bc{/executors/heapHistogram,null,AVAILABLE,@Spark}
+21/03/30 22:38:42 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@498a612d{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+21/03/30 22:38:42 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1e1237ab{/static,null,AVAILABLE,@Spark}
+21/03/30 22:38:42 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@23310248{/,null,AVAILABLE,@Spark}
+21/03/30 22:38:42 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@c2df90e{/api,null,AVAILABLE,@Spark}
+21/03/30 22:38:42 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3c19592c{/jobs/job/kill,null,AVAILABLE,@Spark}
+21/03/30 22:38:42 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@60e1d87c{/stages/stage/kill,null,AVAILABLE,@Spark}
+21/03/30 22:38:42 INFO SparkUI: Bound SparkUI to 10.139.64.5, and started at http://10.139.64.5:40001
+21/03/30 22:38:42 WARN FairSchedulableBuilder: Fair Scheduler configuration file not found so jobs will be scheduled in FIFO order. To use fair scheduling, configure pools in fairscheduler.xml or set spark.scheduler.allocation.file to a file that contains the configuration.
+21/03/30 22:38:42 INFO FairSchedulableBuilder: Created default pool: default, schedulingMode: FIFO, minShare: 0, weight: 1
+21/03/30 22:38:42 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://10.139.64.5:7077...
+21/03/30 22:38:42 INFO TransportClientFactory: Successfully created connection to /10.139.64.5:7077 after 44 ms (0 ms spent in bootstraps)
+21/03/30 22:38:43 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20210330223843-0000
+21/03/30 22:38:43 INFO TaskSchedulerImpl: Task preemption enabled.
+21/03/30 22:38:43 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 43813.
+21/03/30 22:38:43 INFO NettyBlockTransferService: Server created on 10.139.64.5:43813
+21/03/30 22:38:43 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/03/30 22:38:43 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 10.139.64.5, 43813, None)
+21/03/30 22:38:43 INFO BlockManagerMasterEndpoint: Registering block manager 10.139.64.5:43813 with 3.3 GB RAM, BlockManagerId(driver, 10.139.64.5, 43813, None)
+21/03/30 22:38:43 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 10.139.64.5, 43813, None)
+21/03/30 22:38:43 INFO BlockManager: external shuffle service port = 4048
+21/03/30 22:38:43 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 10.139.64.5, 43813, None)
+21/03/30 22:38:43 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@8b13d91{/metrics/json,null,AVAILABLE,@Spark}
+21/03/30 22:38:43 INFO ApplicationProperties: Loading atlas-application.properties from file:/databricks/spark/conf/atlas-application.properties
+21/03/30 22:38:43 INFO ApplicationProperties: Using graphdb backend 'janus'
+21/03/30 22:38:43 INFO ApplicationProperties: Using storage backend 'hbase2'
+21/03/30 22:38:43 INFO ApplicationProperties: Using index backend 'solr'
+21/03/30 22:38:43 INFO ApplicationProperties: Atlas is running in MODE: PROD.
+21/03/30 22:38:43 INFO ApplicationProperties: Setting solr-wait-searcher property 'true'
+21/03/30 22:38:43 INFO ApplicationProperties: Setting index.search.map-name property 'false'
+21/03/30 22:38:43 INFO ApplicationProperties: Setting atlas.graph.index.search.max-result-set-size = 500000
+21/03/30 22:38:43 INFO ApplicationProperties: Property (set to default) atlas.graph.cache.db-cache = true
+21/03/30 22:38:43 INFO ApplicationProperties: Property (set to default) atlas.graph.cache.db-cache-clean-wait = 20
+21/03/30 22:38:43 INFO ApplicationProperties: Property (set to default) atlas.graph.cache.db-cache-size = 0.5
+21/03/30 22:38:43 INFO ApplicationProperties: Property (set to default) atlas.graph.cache.tx-cache-size = 15000
+21/03/30 22:38:43 INFO ApplicationProperties: Property (set to default) atlas.graph.cache.tx-dirty-size = 120
+21/03/30 22:38:43 INFO AbstractConnector: Stopped Spark@4e140497{HTTP/1.1,[http/1.1]}{10.139.64.5:40001}
+21/03/30 22:38:43 INFO SparkUI: Stopped Spark web UI at http://10.139.64.5:40001
+21/03/30 22:38:43 INFO StandaloneSchedulerBackend: Shutting down all executors
+21/03/30 22:38:43 INFO CoarseGrainedSchedulerBackend$DriverEndpoint: Asking each executor to shut down
+21/03/30 22:38:43 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+21/03/30 22:38:43 INFO MemoryStore: MemoryStore cleared
+21/03/30 22:38:43 INFO BlockManager: BlockManager stopped
+21/03/30 22:38:43 INFO BlockManagerMaster: BlockManagerMaster stopped
+21/03/30 22:38:43 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+21/03/30 22:38:43 INFO SparkContext: Successfully stopped SparkContext
+21/03/30 22:38:43 ERROR SparkContext: Error initializing SparkContext.
+org.apache.spark.SparkException: Exception when registering SparkListener
+	at org.apache.spark.SparkContext.setupAndStartListenerBus(SparkContext.scala:2624)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:612)
+	at com.databricks.backend.daemon.driver.DatabricksILoop$$anonfun$4.apply(DatabricksILoop.scala:344)
+	at com.databricks.backend.daemon.driver.DatabricksILoop$$anonfun$4.apply(DatabricksILoop.scala:344)
+	at com.databricks.backend.daemon.driver.ClassLoaders$.withContextClassLoader(ClassLoaders.scala:29)
+	at com.databricks.backend.daemon.driver.DatabricksILoop$.initializeSharedDriverContext(DatabricksILoop.scala:343)
+	at com.databricks.backend.daemon.driver.DatabricksILoop$.getOrCreateSharedDriverContext(DatabricksILoop.scala:274)
+	at com.databricks.backend.daemon.driver.DriverCorral.com$databricks$backend$daemon$driver$DriverCorral$$driverContext(DriverCorral.scala:177)
+	at com.databricks.backend.daemon.driver.DriverCorral.<init>(DriverCorral.scala:214)
+	at com.databricks.backend.daemon.driver.DriverDaemon.<init>(DriverDaemon.scala:35)
+	at com.databricks.backend.daemon.driver.DriverDaemon$.create(DriverDaemon.scala:173)
+	at com.databricks.backend.daemon.driver.DriverDaemon$.wrappedMain(DriverDaemon.scala:178)
+	at com.databricks.DatabricksMain$$anonfun$main$1.apply$mcV$sp(DatabricksMain.scala:94)
+	at com.databricks.DatabricksMain$$anonfun$main$1.apply(DatabricksMain.scala:93)
+	at com.databricks.DatabricksMain$$anonfun$main$1.apply(DatabricksMain.scala:93)
+	at com.databricks.DatabricksMain$$anonfun$1.apply(DatabricksMain.scala:287)
+	at com.databricks.logging.UsageLogging$$anonfun$recordOperation$1.apply(UsageLogging.scala:428)
+	at com.databricks.logging.UsageLogging$$anonfun$withAttributionContext$1.apply(UsageLogging.scala:238)
+	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:58)
+	at com.databricks.logging.UsageLogging$class.withAttributionContext(UsageLogging.scala:233)
+	at com.databricks.DatabricksMain.withAttributionContext(DatabricksMain.scala:63)
+	at com.databricks.logging.UsageLogging$class.withAttributionTags(UsageLogging.scala:275)
+	at com.databricks.DatabricksMain.withAttributionTags(DatabricksMain.scala:63)
+	at com.databricks.logging.UsageLogging$class.recordOperation(UsageLogging.scala:409)
+	at com.databricks.DatabricksMain.recordOperation(DatabricksMain.scala:63)
+	at com.databricks.DatabricksMain.withStartupProfilingData(DatabricksMain.scala:286)
+	at com.databricks.DatabricksMain.main(DatabricksMain.scala:93)
+	at com.databricks.backend.daemon.driver.DriverDaemon.main(DriverDaemon.scala)
+Caused by: org.apache.atlas.AtlasException: Failed to load application properties
+	at org.apache.atlas.ApplicationProperties.get(ApplicationProperties.java:147)
+	at org.apache.atlas.ApplicationProperties.get(ApplicationProperties.java:100)
+	at com.sparkview.spark.atlas.AtlasClientConf.configuration$lzycompute(AtlasClientConf.scala:24)
+	at com.sparkview.spark.atlas.AtlasClientConf.configuration(AtlasClientConf.scala:24)
+	at com.sparkview.spark.atlas.AtlasClientConf.get(AtlasClientConf.scala:49)
+	at com.sparkview.spark.atlas.AtlasClient$.atlasClient(AtlasClient.scala:120)
+	at com.sparkview.spark.atlas.SparkAtlasEventTracker.<init>(SparkAtlasEventTracker.scala:33)
+	at com.sparkview.spark.atlas.SparkAtlasEventTracker.<init>(SparkAtlasEventTracker.scala:37)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.spark.util.Utils$$anonfun$loadExtensions$1.apply(Utils.scala:2957)
+	at org.apache.spark.util.Utils$$anonfun$loadExtensions$1.apply(Utils.scala:2946)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:241)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:241)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at scala.collection.TraversableLike$class.flatMap(TraversableLike.scala:241)
+	at scala.collection.AbstractTraversable.flatMap(Traversable.scala:104)
+	at org.apache.spark.util.Utils$.loadExtensions(Utils.scala:2946)
+	at org.apache.spark.SparkContext$$anonfun$setupAndStartListenerBus$1.apply(SparkContext.scala:2613)
+	at org.apache.spark.SparkContext$$anonfun$setupAndStartListenerBus$1.apply(SparkContext.scala:2612)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.SparkContext.setupAndStartListenerBus(SparkContext.scala:2612)
+	... 27 more
+Caused by: org.apache.commons.configuration.ConversionException: 'atlas.graph.index.search.solr.wait-searcher' doesn't map to a List object: true, a java.lang.Boolean
+	at org.apache.commons.configuration.AbstractConfiguration.getList(AbstractConfiguration.java:1144)
+	at org.apache.commons.configuration.AbstractConfiguration.getList(AbstractConfiguration.java:1109)
+	at org.apache.commons.configuration.AbstractConfiguration.interpolatedConfiguration(AbstractConfiguration.java:1274)
+	at org.apache.atlas.ApplicationProperties.get(ApplicationProperties.java:142)
+	... 51 more
+21/03/30 22:38:43 INFO SparkContext: SparkContext already stopped.
+21/03/30 22:38:43 ERROR DriverDaemon$: XXX Fatal uncaught exception. Terminating driver.
+org.apache.spark.SparkException: Exception when registering SparkListener
+	at org.apache.spark.SparkContext.setupAndStartListenerBus(SparkContext.scala:2624)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:612)
+	at com.databricks.backend.daemon.driver.DatabricksILoop$$anonfun$4.apply(DatabricksILoop.scala:344)
+	at com.databricks.backend.daemon.driver.DatabricksILoop$$anonfun$4.apply(DatabricksILoop.scala:344)
+	at com.databricks.backend.daemon.driver.ClassLoaders$.withContextClassLoader(ClassLoaders.scala:29)
+	at com.databricks.backend.daemon.driver.DatabricksILoop$.initializeSharedDriverContext(DatabricksILoop.scala:343)
+	at com.databricks.backend.daemon.driver.DatabricksILoop$.getOrCreateSharedDriverContext(DatabricksILoop.scala:274)
+	at com.databricks.backend.daemon.driver.DriverCorral.com$databricks$backend$daemon$driver$DriverCorral$$driverContext(DriverCorral.scala:177)
+	at com.databricks.backend.daemon.driver.DriverCorral.<init>(DriverCorral.scala:214)
+	at com.databricks.backend.daemon.driver.DriverDaemon.<init>(DriverDaemon.scala:35)
+	at com.databricks.backend.daemon.driver.DriverDaemon$.create(DriverDaemon.scala:173)
+	at com.databricks.backend.daemon.driver.DriverDaemon$.wrappedMain(DriverDaemon.scala:178)
+	at com.databricks.DatabricksMain$$anonfun$main$1.apply$mcV$sp(DatabricksMain.scala:94)
+	at com.databricks.DatabricksMain$$anonfun$main$1.apply(DatabricksMain.scala:93)
+	at com.databricks.DatabricksMain$$anonfun$main$1.apply(DatabricksMain.scala:93)
+	at com.databricks.DatabricksMain$$anonfun$1.apply(DatabricksMain.scala:287)
+	at com.databricks.logging.UsageLogging$$anonfun$recordOperation$1.apply(UsageLogging.scala:428)
+	at com.databricks.logging.UsageLogging$$anonfun$withAttributionContext$1.apply(UsageLogging.scala:238)
+	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:58)
+	at com.databricks.logging.UsageLogging$class.withAttributionContext(UsageLogging.scala:233)
+	at com.databricks.DatabricksMain.withAttributionContext(DatabricksMain.scala:63)
+	at com.databricks.logging.UsageLogging$class.withAttributionTags(UsageLogging.scala:275)
+	at com.databricks.DatabricksMain.withAttributionTags(DatabricksMain.scala:63)
+	at com.databricks.logging.UsageLogging$class.recordOperation(UsageLogging.scala:409)
+	at com.databricks.DatabricksMain.recordOperation(DatabricksMain.scala:63)
+	at com.databricks.DatabricksMain.withStartupProfilingData(DatabricksMain.scala:286)
+	at com.databricks.DatabricksMain.main(DatabricksMain.scala:93)
+	at com.databricks.backend.daemon.driver.DriverDaemon.main(DriverDaemon.scala)
+Caused by: org.apache.atlas.AtlasException: Failed to load application properties
+	at org.apache.atlas.ApplicationProperties.get(ApplicationProperties.java:147)
+	at org.apache.atlas.ApplicationProperties.get(ApplicationProperties.java:100)
+	at com.sparkview.spark.atlas.AtlasClientConf.configuration$lzycompute(AtlasClientConf.scala:24)
+	at com.sparkview.spark.atlas.AtlasClientConf.configuration(AtlasClientConf.scala:24)
+	at com.sparkview.spark.atlas.AtlasClientConf.get(AtlasClientConf.scala:49)
+	at com.sparkview.spark.atlas.AtlasClient$.atlasClient(AtlasClient.scala:120)
+	at com.sparkview.spark.atlas.SparkAtlasEventTracker.<init>(SparkAtlasEventTracker.scala:33)
+	at com.sparkview.spark.atlas.SparkAtlasEventTracker.<init>(SparkAtlasEventTracker.scala:37)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.spark.util.Utils$$anonfun$loadExtensions$1.apply(Utils.scala:2957)
+	at org.apache.spark.util.Utils$$anonfun$loadExtensions$1.apply(Utils.scala:2946)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:241)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:241)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at scala.collection.TraversableLike$class.flatMap(TraversableLike.scala:241)
+	at scala.collection.AbstractTraversable.flatMap(Traversable.scala:104)
+	at org.apache.spark.util.Utils$.loadExtensions(Utils.scala:2946)
+	at org.apache.spark.SparkContext$$anonfun$setupAndStartListenerBus$1.apply(SparkContext.scala:2613)
+	at org.apache.spark.SparkContext$$anonfun$setupAndStartListenerBus$1.apply(SparkContext.scala:2612)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.SparkContext.setupAndStartListenerBus(SparkContext.scala:2612)
+	... 27 more
+Caused by: org.apache.commons.configuration.ConversionException: 'atlas.graph.index.search.solr.wait-searcher' doesn't map to a List object: true, a java.lang.Boolean
+	at org.apache.commons.configuration.AbstractConfiguration.getList(AbstractConfiguration.java:1144)
+	at org.apache.commons.configuration.AbstractConfiguration.getList(AbstractConfiguration.java:1109)
+	at org.apache.commons.configuration.AbstractConfiguration.interpolatedConfiguration(AbstractConfiguration.java:1274)
+	at org.apache.atlas.ApplicationProperties.get(ApplicationProperties.java:142)
+	... 51 more
+21/03/30 22:38:44 INFO ShutdownHookManager: Shutdown hook called
+21/03/30 22:38:44 INFO ShutdownHookManager: Deleting directory /local_disk0/tmp/spark-dcee965e-da1d-4da8-872a-29f79ab69bd0
+21/03/30 22:38:44 INFO ShutdownHookManager: Deleting directory /local_disk0/spark-4fc033f8-8822-48cc-afd7-68210fcd859a
+21/03/30 22:38:44 INFO ShutdownHookManager: Deleting directory /local_disk0/tmp/spark-3ce2424c-b189-47c2-b994-56580b7903e7
+21/03/30 22:38:47 INFO StaticConf$: DB_HOME: /databricks
+21/03/30 22:38:47 INFO DriverDaemon$: ========== driver starting up ==========
+21/03/30 22:38:47 INFO DriverDaemon$: Java: Azul Systems, Inc. 1.8.0_282
+21/03/30 22:38:47 INFO DriverDaemon$: OS: Linux/amd64 4.15.0-1092-azure
+21/03/30 22:38:47 INFO DriverDaemon$: CWD: /databricks/driver
+21/03/30 22:38:47 INFO DriverDaemon$: Mem: Max: 6.3G loaded GCs: PS Scavenge, PS MarkSweep
+21/03/30 22:38:47 INFO DriverDaemon$: Logging multibyte characters: ✓
+21/03/30 22:38:47 INFO DriverDaemon$: 'publicFile' appender in root logger: class com.databricks.logging.RedactionRollingFileAppender
+21/03/30 22:38:47 INFO DriverDaemon$: 'org.apache.log4j.Appender' appender in root logger: class com.codahale.metrics.log4j.InstrumentedAppender
+21/03/30 22:38:47 INFO DriverDaemon$: 'null' appender in root logger: class com.databricks.logging.RequestTracker
+21/03/30 22:38:47 INFO DriverDaemon$: == Modules:
+21/03/30 22:38:48 INFO DriverDaemon$: Starting prometheus metrics log export timer
+21/03/30 22:38:48 INFO DriverDaemon$: Universe Git Hash: 5b5bba772ba23db6c52998c0043e49d46ecd87fb
+21/03/30 22:38:48 INFO DriverDaemon$: Spark Git Hash: 8e5cfd0029136397a208ff700a87d7006fdd380d
+21/03/30 22:38:48 WARN RunHelpers$: Missing tag isolation client: java.util.NoSuchElementException: key not found: TagDefinition(clientType,The client type for a request, used for isolating resources for the request.)
+21/03/30 22:38:48 INFO DatabricksILoop$: Creating throwaway interpreter
+21/03/30 22:38:48 INFO SparkConfUtils$: Customize spark config according to file /tmp/custom-spark.conf
+21/03/30 22:38:48 INFO SparkConfUtils$: Respecting spark.executor.extraJavaOptions in system property
+21/03/30 22:38:48 INFO MetastoreMonitor$: Internal internal metastore configured (config=DbMetastoreConfig{host=consolidated-canadacentral-prod-metastore.mysql.database.azure.com, port=3306, dbName=organization5539086989731741, user=OiWT4dGqp5ISPZRH@consolidated-canadacentral-prod-metastore})
+21/03/30 22:38:48 INFO HikariDataSource: metastore-monitor - Starting...
+21/03/30 22:38:48 INFO HikariDataSource: metastore-monitor - Start completed.
+21/03/30 22:38:49 INFO DriverCorral: Creating the driver context
+21/03/30 22:38:49 INFO DatabricksILoop$: Class Server Dir: /local_disk0/tmp/repl/spark-3457064162099700180-e6047e7e-3d61-4dcf-8c5c-686943ec404a
+21/03/30 22:38:49 INFO SparkConfUtils$: Customize spark config according to file /tmp/custom-spark.conf
+21/03/30 22:38:49 INFO SparkConfUtils$: Respecting spark.executor.extraJavaOptions in system property
+21/03/30 22:38:49 WARN SparkConf: The configuration key 'spark.akka.frameSize' has been deprecated as of Spark 1.6 and may be removed in the future. Please use the new key 'spark.rpc.message.maxSize' instead.
+21/03/30 22:38:49 INFO SparkContext: Running Spark version 2.4.5
+21/03/30 22:38:49 INFO HikariDataSource: metastore-monitor - Shutdown initiated...
+21/03/30 22:38:49 INFO HikariDataSource: metastore-monitor - Shutdown completed.
+21/03/30 22:38:49 INFO MetastoreMonitor: Metastore healthcheck successful (connection duration = 810 milliseconds)
+21/03/30 22:38:49 WARN SparkConf: Detected deprecated memory fraction settings: [spark.shuffle.memoryFraction, spark.storage.memoryFraction]. As of Spark 1.6, execution and storage memory management are unified. All memory fractions used in the old model are now deprecated and no longer read. If you wish to use the old memory management, you may explicitly enable `spark.memory.useLegacyMode` (not recommended).
+21/03/30 22:38:49 INFO SparkContext: Submitted application: Databricks Shell
+21/03/30 22:38:49 INFO SecurityManager: Changing view acls to: root
+21/03/30 22:38:49 INFO SecurityManager: Changing modify acls to: root
+21/03/30 22:38:49 INFO SecurityManager: Changing view acls groups to: 
+21/03/30 22:38:49 INFO SecurityManager: Changing modify acls groups to: 
+21/03/30 22:38:49 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+21/03/30 22:38:50 INFO Utils: Successfully started service 'sparkDriver' on port 35921.
+21/03/30 22:38:50 INFO SparkEnv: Registering MapOutputTracker
+21/03/30 22:38:50 INFO SparkEnv: Registering BlockManagerMaster
+21/03/30 22:38:50 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+21/03/30 22:38:50 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+21/03/30 22:38:50 INFO DiskBlockManager: Created local directory at /local_disk0/blockmgr-19d6ce89-03e1-415a-b308-6961da110c89
+21/03/30 22:38:50 INFO MemoryStore: MemoryStore started with capacity 3.3 GB
+21/03/30 22:38:50 INFO SparkEnv: Registering OutputCommitCoordinator
+21/03/30 22:38:50 INFO SparkContext: Spark configuration:
+eventLog.rolloverIntervalSeconds=3600
+spark.akka.frameSize=256
+spark.app.name=Databricks Shell
+spark.cleaner.referenceTracking.blocking=false
+spark.databricks.acl.client=com.databricks.spark.sql.acl.client.SparkSqlAclClient
+spark.databricks.acl.provider=com.databricks.sql.acl.ReflectionBackedAclProvider
+spark.databricks.cloudProvider=Azure
+spark.databricks.clusterSource=UI
+spark.databricks.clusterUsageTags.autoTerminationMinutes=30
+spark.databricks.clusterUsageTags.azureSubscriptionId=9dd2c898-8111-4322-91d6-a039a00bd513
+spark.databricks.clusterUsageTags.cloudProvider=Azure
+spark.databricks.clusterUsageTags.clusterAllTags=[{"key":"Vendor","value":"Databricks"},{"key":"Creator","value":"kenny.bui@slalom.com"},{"key":"ClusterName","value":"spark2-atlas"},{"key":"ClusterId","value":"0118-193839-lens147"},{"key":"Manager","value":"Florian Anshelm"},{"key":"Market","value":"Toronto Data & Analytics"},{"key":"Name","value":"Henry Tsang"},{"key":"Project","value":"Toronto D&A PoC"},{"key":"DatabricksEnvironment","value":"workerenv-5539086989731741"}]
+spark.databricks.clusterUsageTags.clusterAvailability=ON_DEMAND_AZURE
+spark.databricks.clusterUsageTags.clusterCreator=Webapp
+spark.databricks.clusterUsageTags.clusterFirstOnDemand=1
+spark.databricks.clusterUsageTags.clusterGeneration=31
+spark.databricks.clusterUsageTags.clusterId=0118-193839-lens147
+spark.databricks.clusterUsageTags.clusterLogDeliveryEnabled=false
+spark.databricks.clusterUsageTags.clusterLogDestination=
+spark.databricks.clusterUsageTags.clusterMetastoreAccessType=RDS_DIRECT
+spark.databricks.clusterUsageTags.clusterName=spark2-atlas
+spark.databricks.clusterUsageTags.clusterNoDriverDaemon=false
+spark.databricks.clusterUsageTags.clusterNodeType=Standard_DS3_v2
+spark.databricks.clusterUsageTags.clusterNumSshKeys=0
+spark.databricks.clusterUsageTags.clusterOwnerOrgId=5539086989731741
+spark.databricks.clusterUsageTags.clusterOwnerUserId=*********(redacted)
+spark.databricks.clusterUsageTags.clusterPinned=false
+spark.databricks.clusterUsageTags.clusterPythonVersion=2
+spark.databricks.clusterUsageTags.clusterResourceClass=default
+spark.databricks.clusterUsageTags.clusterScalingType=fixed_size
+spark.databricks.clusterUsageTags.clusterSku=STANDARD_SKU
+spark.databricks.clusterUsageTags.clusterSpotBidMaxPrice=-1.0
+spark.databricks.clusterUsageTags.clusterState=Pending
+spark.databricks.clusterUsageTags.clusterStateMessage=Starting Spark
+spark.databricks.clusterUsageTags.clusterTargetWorkers=1
+spark.databricks.clusterUsageTags.clusterWorkers=1
+spark.databricks.clusterUsageTags.containerType=LXC
+spark.databricks.clusterUsageTags.dataPlaneRegion=canadacentral
+spark.databricks.clusterUsageTags.driverContainerId=b77a9f54ae21441fb962832d172bc65d
+spark.databricks.clusterUsageTags.driverContainerPrivateIp=10.139.64.5
+spark.databricks.clusterUsageTags.driverInstanceId=dde3408520c44ddcb14fe7c8cc61129a
+spark.databricks.clusterUsageTags.driverInstancePrivateIp=10.139.0.5
+spark.databricks.clusterUsageTags.driverNodeType=Standard_DS3_v2
+spark.databricks.clusterUsageTags.driverPublicDns=52.138.26.223
+spark.databricks.clusterUsageTags.enableCredentialPassthrough=*********(redacted)
+spark.databricks.clusterUsageTags.enableDfAcls=false
+spark.databricks.clusterUsageTags.enableElasticDisk=true
+spark.databricks.clusterUsageTags.enableJdbcAutoStart=true
+spark.databricks.clusterUsageTags.enableJobsAutostart=true
+spark.databricks.clusterUsageTags.enableLocalDiskEncryption=false
+spark.databricks.clusterUsageTags.enableSqlAclsOnly=false
+spark.databricks.clusterUsageTags.hailEnabled=false
+spark.databricks.clusterUsageTags.instanceWorkerEnvId=workerenv-5539086989731741
+spark.databricks.clusterUsageTags.instanceWorkerEnvNetworkType=default
+spark.databricks.clusterUsageTags.isIMv2Enabled=true
+spark.databricks.clusterUsageTags.isSingleUserCluster=*********(redacted)
+spark.databricks.clusterUsageTags.managedResourceGroup=databricks-rg-yaaf-databricks-i62lgapisrkfs
+spark.databricks.clusterUsageTags.ngrokNpipEnabled=false
+spark.databricks.clusterUsageTags.numPerClusterInitScriptsV2=1
+spark.databricks.clusterUsageTags.numPerGlobalInitScriptsV2=0
+spark.databricks.clusterUsageTags.privateLinkEnabled=false
+spark.databricks.clusterUsageTags.region=canadacentral
+spark.databricks.clusterUsageTags.sparkVersion=6.4.x-esr-scala2.11
+spark.databricks.clusterUsageTags.userProvidedRemoteVolumeCount=*********(redacted)
+spark.databricks.clusterUsageTags.userProvidedRemoteVolumeSizeGb=*********(redacted)
+spark.databricks.clusterUsageTags.userProvidedRemoteVolumeType=*********(redacted)
+spark.databricks.clusterUsageTags.workerEnvironmentId=workerenv-5539086989731741
+spark.databricks.credential.redactor=*********(redacted)
+spark.databricks.delta.logStore.crossCloud.fatal=true
+spark.databricks.delta.multiClusterWrites.enabled=true
+spark.databricks.driverNodeTypeId=Standard_DS3_v2
+spark.databricks.eventLog.dir=eventlogs
+spark.databricks.io.directoryCommit.enableLogicalDelete=false
+spark.databricks.overrideDefaultCommitProtocol=org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol
+spark.databricks.passthrough.adls.gen2.tokenProviderClassName=*********(redacted)
+spark.databricks.passthrough.adls.tokenProviderClassName=*********(redacted)
+spark.databricks.passthrough.glue.credentialsProviderFactoryClassName=*********(redacted)
+spark.databricks.passthrough.glue.executorServiceFactoryClassName=com.databricks.backend.daemon.driver.GlueClientExecutorServiceFactory
+spark.databricks.passthrough.s3a.threadPoolExecutor.factory.class=com.databricks.backend.daemon.driver.aws.S3APassthroughThreadPoolExecutorFactory
+spark.databricks.passthrough.s3a.tokenProviderClassName=*********(redacted)
+spark.databricks.preemption.enabled=true
+spark.databricks.redactor=com.databricks.spark.util.DatabricksSparkLogRedactorProxy
+spark.databricks.secret.envVar.keys.toRedact=*********(redacted)
+spark.databricks.secret.sparkConf.keys.toRedact=*********(redacted)
+spark.databricks.session.share=false
+spark.databricks.sparkContextId=3457064162099700180
+spark.databricks.sqlservice.querylog.client=com.databricks.spark.sqlservice.client.DriverToSqlServiceQueryLogClient
+spark.databricks.tahoe.logStore.aws.class=com.databricks.tahoe.store.MultiClusterLogStore
+spark.databricks.tahoe.logStore.azure.class=com.databricks.tahoe.store.AzureLogStore
+spark.databricks.tahoe.logStore.class=com.databricks.tahoe.store.DelegatingLogStore
+spark.databricks.workerNodeTypeId=Standard_DS3_v2
+spark.databricks.workspace.matplotlibInline.enabled=true
+spark.driver.allowMultipleContexts=false
+spark.driver.extraJavaOptions=-Datlas.conf=/databricks/spark/conf
+spark.driver.host=10.139.64.5
+spark.driver.maxResultSize=4g
+spark.driver.port=35921
+spark.driver.tempDirectory=/local_disk0/tmp
+spark.eventLog.enabled=false
+spark.executor.extraClassPath=*********(redacted)
+spark.executor.extraJavaOptions=-Djava.io.tmpdir=/local_disk0/tmp -XX:ReservedCodeCacheSize=256m -XX:+UseCodeCacheFlushing -Djava.security.properties=/databricks/spark/dbconf/java/extra.security -Djava.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni -XX:-UseContainerSupport -XX:+PrintFlagsFinal -XX:+PrintGCDateStamps -verbose:gc -XX:+PrintGCDetails -Xss4m -Djavax.xml.datatype.DatatypeFactory=com.sun.org.apache.xerces.internal.jaxp.datatype.DatatypeFactoryImpl -Djavax.xml.parsers.DocumentBuilderFactory=com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl -Djavax.xml.parsers.SAXParserFactory=com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl -Djavax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema=com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaFactory -Dorg.xml.sax.driver=com.sun.org.apache.xerces.internal.parsers.SAXParser -Dorg.w3c.dom.DOMImplementationSourceList=com.sun.org.apache.xerces.internal.dom.DOMXSImplementationSourceImpl -Djavax.net.ssl.sessionCacheSize=10000 -Dscala.reflect.runtime.disable.typetag.cache=true -Datlas.conf=/databricks/spark/conf -Ddatabricks.serviceName=spark-executor-1
+spark.executor.id=driver
+spark.executor.memory=7284m
+spark.executor.tempDirectory=/local_disk0/tmp
+spark.extraListeners=com.sparkview.spark.atlas.SparkAtlasEventTracker
+spark.files.fetchFailure.unRegisterOutputOnHost=true
+spark.files.overwrite=true
+spark.files.useFetchCache=false
+spark.hadoop.databricks.dbfs.client.version=v2
+spark.hadoop.databricks.s3commit.client.sslTrustAll=false
+spark.hadoop.fs.abfs.impl=shaded.databricks.v20180920_b33d810.org.apache.hadoop.fs.azurebfs.AzureBlobFileSystem
+spark.hadoop.fs.abfs.impl.disable.cache=true
+spark.hadoop.fs.abfss.impl=shaded.databricks.v20180920_b33d810.org.apache.hadoop.fs.azurebfs.SecureAzureBlobFileSystem
+spark.hadoop.fs.abfss.impl.disable.cache=true
+spark.hadoop.fs.adl.impl=com.databricks.adl.AdlFileSystem
+spark.hadoop.fs.adl.impl.disable.cache=true
+spark.hadoop.fs.azure.skip.metrics=true
+spark.hadoop.fs.s3.impl=com.databricks.s3a.S3AFileSystem
+spark.hadoop.fs.s3a.connection.maximum=200
+spark.hadoop.fs.s3a.fast.upload=true
+spark.hadoop.fs.s3a.fast.upload.default=true
+spark.hadoop.fs.s3a.impl=com.databricks.s3a.S3AFileSystem
+spark.hadoop.fs.s3a.multipart.size=10485760
+spark.hadoop.fs.s3a.multipart.threshold=104857600
+spark.hadoop.fs.s3a.threads.max=136
+spark.hadoop.fs.s3n.impl=com.databricks.s3a.S3AFileSystem
+spark.hadoop.fs.wasb.impl=shaded.databricks.org.apache.hadoop.fs.azure.NativeAzureFileSystem
+spark.hadoop.fs.wasb.impl.disable.cache=true
+spark.hadoop.fs.wasbs.impl=shaded.databricks.org.apache.hadoop.fs.azure.NativeAzureFileSystem
+spark.hadoop.fs.wasbs.impl.disable.cache=true
+spark.hadoop.hive.server2.enable.doAs=false
+spark.hadoop.hive.server2.idle.operation.timeout=7200000
+spark.hadoop.hive.server2.idle.session.timeout=900000
+spark.hadoop.hive.server2.keystore.password=*********(redacted)
+spark.hadoop.hive.server2.keystore.path=/databricks/keys/jetty-ssl-driver-keystore.jks
+spark.hadoop.hive.server2.session.check.interval=60000
+spark.hadoop.hive.server2.thrift.http.cookie.auth.enabled=false
+spark.hadoop.hive.server2.thrift.http.port=10000
+spark.hadoop.hive.server2.transport.mode=http
+spark.hadoop.hive.server2.use.SSL=true
+spark.hadoop.hive.warehouse.subdir.inherit.perms=false
+spark.hadoop.mapred.output.committer.class=com.databricks.backend.daemon.data.client.DirectOutputCommitter
+spark.hadoop.mapreduce.fileoutputcommitter.algorithm.version=2
+spark.hadoop.parquet.block.size.row.check.max=10
+spark.hadoop.parquet.block.size.row.check.min=10
+spark.hadoop.parquet.memory.pool.ratio=0.5
+spark.hadoop.parquet.page.size.check.estimate=false
+spark.hadoop.parquet.page.verify-checksum.enabled=true
+spark.hadoop.parquet.page.write-checksum.enabled=true
+spark.hadoop.spark.driverproxy.customHeadersToProperties=*********(redacted)
+spark.hadoop.spark.sql.parquet.output.committer.class=org.apache.spark.sql.parquet.DirectParquetOutputCommitter
+spark.hadoop.spark.sql.sources.outputCommitterClass=com.databricks.backend.daemon.data.client.MapReduceDirectOutputCommitter
+spark.hadoop.spark.thriftserver.closeSessionHeaderName=X-Databricks-SqlService-CloseSession
+spark.home=/databricks/spark
+spark.logConf=true
+spark.master=spark://10.139.64.5:7077
+spark.metrics.conf=/databricks/spark/conf/metrics.properties
+spark.r.backendConnectionTimeout=604800
+spark.r.numRBackendThreads=1
+spark.rdd.compress=true
+spark.repl.class.outputDir=/local_disk0/tmp/repl/spark-3457064162099700180-e6047e7e-3d61-4dcf-8c5c-686943ec404a
+spark.rpc.message.maxSize=256
+spark.scheduler.listenerbus.eventqueue.capacity=20000
+spark.scheduler.mode=FAIR
+spark.serializer.objectStreamReset=100
+spark.shuffle.manager=SORT
+spark.shuffle.memoryFraction=0.2
+spark.shuffle.reduceLocality.enabled=false
+spark.shuffle.service.enabled=true
+spark.shuffle.service.port=4048
+spark.sparkr.use.daemon=false
+spark.speculation=false
+spark.speculation.multiplier=3
+spark.speculation.quantile=0.9
+spark.sql.allowMultipleContexts=false
+spark.sql.hive.convertCTAS=true
+spark.sql.hive.convertMetastoreParquet=true
+spark.sql.hive.metastore.jars=/databricks/hive/*
+spark.sql.hive.metastore.sharedPrefixes=org.mariadb.jdbc,com.mysql.jdbc,org.postgresql,com.microsoft.sqlserver,microsoft.sql.DateTimeOffset,microsoft.sql.Types,com.databricks,com.codahale,com.fasterxml.jackson,shaded.databricks
+spark.sql.hive.metastore.version=0.13.0
+spark.sql.parquet.cacheMetadata=true
+spark.sql.parquet.compression.codec=snappy
+spark.sql.queryExecutionListeners=com.sparkview.spark.atlas.SparkAtlasEventTracker
+spark.sql.sources.commitProtocolClass=com.databricks.sql.transaction.directory.DirectoryAtomicCommitProtocol
+spark.sql.streaming.checkpointFileManagerClass=com.databricks.spark.sql.streaming.DatabricksCheckpointFileManager
+spark.sql.streaming.stopTimeout=15s
+spark.sql.streaming.streamingQueryListeners=com.sparkview.spark.atlas.SparkAtlasStreamingQueryEventTracker
+spark.sql.ui.retainedExecutions=100
+spark.sql.warehouse.dir=*********(redacted)
+spark.storage.blockManagerTimeoutIntervalMs=300000
+spark.storage.memoryFraction=0.5
+spark.streaming.driver.writeAheadLog.allowBatching=true
+spark.streaming.driver.writeAheadLog.closeFileAfterWrite=true
+spark.task.reaper.enabled=true
+spark.task.reaper.killTimeout=60s
+spark.ui.port=40001
+spark.worker.cleanup.enabled=false
+21/03/30 22:38:50 WARN MetricsSystem: Using default name SparkStatusTracker for source because neither spark.metrics.namespace nor spark.app.id is set.
+21/03/30 22:38:50 INFO log: Logging initialized @5172ms
+21/03/30 22:38:51 INFO Server: jetty-9.3.27.v20190418, build timestamp: 2019-04-18T18:11:38Z, git hash: d3e249f86955d04bc646bb620905b7c1bc596a8d
+21/03/30 22:38:51 INFO Server: Started @5774ms
+21/03/30 22:38:51 INFO AbstractConnector: Started ServerConnector@4e140497{HTTP/1.1,[http/1.1]}{10.139.64.5:40001}
+21/03/30 22:38:51 INFO Utils: Successfully started service 'SparkUI' on port 40001.
+21/03/30 22:38:51 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@188a5fc2{/jobs,null,AVAILABLE,@Spark}
+21/03/30 22:38:51 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@54af3cb9{/jobs/json,null,AVAILABLE,@Spark}
+21/03/30 22:38:51 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@236fdf{/jobs/job,null,AVAILABLE,@Spark}
+21/03/30 22:38:51 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@653fb8d1{/jobs/job/json,null,AVAILABLE,@Spark}
+21/03/30 22:38:51 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@48581a3b{/stages,null,AVAILABLE,@Spark}
+21/03/30 22:38:51 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@531ec978{/stages/json,null,AVAILABLE,@Spark}
+21/03/30 22:38:51 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@93501be{/stages/stage,null,AVAILABLE,@Spark}
+21/03/30 22:38:51 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3c25cfe1{/stages/stage/json,null,AVAILABLE,@Spark}
+21/03/30 22:38:51 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1d3c112a{/stages/pool,null,AVAILABLE,@Spark}
+21/03/30 22:38:51 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2a140ce5{/stages/pool/json,null,AVAILABLE,@Spark}
+21/03/30 22:38:51 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1f71194d{/storage,null,AVAILABLE,@Spark}
+21/03/30 22:38:51 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@db99785{/storage/json,null,AVAILABLE,@Spark}
+21/03/30 22:38:51 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@70716259{/storage/rdd,null,AVAILABLE,@Spark}
+21/03/30 22:38:51 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@7a083b96{/storage/rdd/json,null,AVAILABLE,@Spark}
+21/03/30 22:38:51 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6da4feeb{/environment,null,AVAILABLE,@Spark}
+21/03/30 22:38:51 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2c604965{/environment/json,null,AVAILABLE,@Spark}
+21/03/30 22:38:51 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@57f8951a{/executors,null,AVAILABLE,@Spark}
+21/03/30 22:38:51 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6c17c0f8{/executors/json,null,AVAILABLE,@Spark}
+21/03/30 22:38:51 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@260e3837{/executors/threadDump,null,AVAILABLE,@Spark}
+21/03/30 22:38:51 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@88b76f2{/executors/threadDump/json,null,AVAILABLE,@Spark}
+21/03/30 22:38:51 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1b4872bc{/executors/heapHistogram,null,AVAILABLE,@Spark}
+21/03/30 22:38:51 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@498a612d{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+21/03/30 22:38:51 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1e1237ab{/static,null,AVAILABLE,@Spark}
+21/03/30 22:38:51 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@23310248{/,null,AVAILABLE,@Spark}
+21/03/30 22:38:51 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@c2df90e{/api,null,AVAILABLE,@Spark}
+21/03/30 22:38:51 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3c19592c{/jobs/job/kill,null,AVAILABLE,@Spark}
+21/03/30 22:38:51 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@60e1d87c{/stages/stage/kill,null,AVAILABLE,@Spark}
+21/03/30 22:38:51 INFO SparkUI: Bound SparkUI to 10.139.64.5, and started at http://10.139.64.5:40001
+21/03/30 22:38:51 WARN FairSchedulableBuilder: Fair Scheduler configuration file not found so jobs will be scheduled in FIFO order. To use fair scheduling, configure pools in fairscheduler.xml or set spark.scheduler.allocation.file to a file that contains the configuration.
+21/03/30 22:38:51 INFO FairSchedulableBuilder: Created default pool: default, schedulingMode: FIFO, minShare: 0, weight: 1
+21/03/30 22:38:51 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://10.139.64.5:7077...
+21/03/30 22:38:51 INFO TransportClientFactory: Successfully created connection to /10.139.64.5:7077 after 45 ms (0 ms spent in bootstraps)
+21/03/30 22:38:51 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20210330223851-0001
+21/03/30 22:38:51 INFO TaskSchedulerImpl: Task preemption enabled.
+21/03/30 22:38:51 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20210330223851-0001/0 on worker-20210330223845-10.139.64.4-38009 (10.139.64.4:38009) with 4 core(s)
+21/03/30 22:38:51 INFO StandaloneSchedulerBackend: Granted executor ID app-20210330223851-0001/0 on hostPort 10.139.64.4:38009 with 4 core(s), 7.1 GB RAM
+21/03/30 22:38:51 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 44867.
+21/03/30 22:38:51 INFO NettyBlockTransferService: Server created on 10.139.64.5:44867
+21/03/30 22:38:51 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/03/30 22:38:51 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 10.139.64.5, 44867, None)
+21/03/30 22:38:51 INFO BlockManagerMasterEndpoint: Registering block manager 10.139.64.5:44867 with 3.3 GB RAM, BlockManagerId(driver, 10.139.64.5, 44867, None)
+21/03/30 22:38:51 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 10.139.64.5, 44867, None)
+21/03/30 22:38:51 INFO BlockManager: external shuffle service port = 4048
+21/03/30 22:38:51 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 10.139.64.5, 44867, None)
+21/03/30 22:38:51 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20210330223851-0001/0 is now RUNNING
+21/03/30 22:38:51 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4ce25e47{/metrics/json,null,AVAILABLE,@Spark}
+21/03/30 22:38:51 INFO ApplicationProperties: Loading atlas-application.properties from file:/databricks/spark/conf/atlas-application.properties
+21/03/30 22:38:51 INFO ApplicationProperties: Using graphdb backend 'janus'
+21/03/30 22:38:51 INFO ApplicationProperties: Using storage backend 'hbase2'
+21/03/30 22:38:51 INFO ApplicationProperties: Using index backend 'solr'
+21/03/30 22:38:51 INFO ApplicationProperties: Atlas is running in MODE: PROD.
+21/03/30 22:38:51 INFO ApplicationProperties: Setting solr-wait-searcher property 'true'
+21/03/30 22:38:51 INFO ApplicationProperties: Setting index.search.map-name property 'false'
+21/03/30 22:38:51 INFO ApplicationProperties: Setting atlas.graph.index.search.max-result-set-size = 500000
+21/03/30 22:38:51 INFO ApplicationProperties: Property (set to default) atlas.graph.cache.db-cache = true
+21/03/30 22:38:51 INFO ApplicationProperties: Property (set to default) atlas.graph.cache.db-cache-clean-wait = 20
+21/03/30 22:38:51 INFO ApplicationProperties: Property (set to default) atlas.graph.cache.db-cache-size = 0.5
+21/03/30 22:38:51 INFO ApplicationProperties: Property (set to default) atlas.graph.cache.tx-cache-size = 15000
+21/03/30 22:38:51 INFO ApplicationProperties: Property (set to default) atlas.graph.cache.tx-dirty-size = 120
+21/03/30 22:38:51 INFO AbstractConnector: Stopped Spark@4e140497{HTTP/1.1,[http/1.1]}{10.139.64.5:40001}
+21/03/30 22:38:51 INFO SparkUI: Stopped Spark web UI at http://10.139.64.5:40001
+21/03/30 22:38:51 INFO StandaloneSchedulerBackend: Shutting down all executors
+21/03/30 22:38:51 INFO CoarseGrainedSchedulerBackend$DriverEndpoint: Asking each executor to shut down
+21/03/30 22:38:51 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+21/03/30 22:38:52 INFO MemoryStore: MemoryStore cleared
+21/03/30 22:38:52 INFO BlockManager: BlockManager stopped
+21/03/30 22:38:52 INFO BlockManagerMaster: BlockManagerMaster stopped
+21/03/30 22:38:52 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+21/03/30 22:38:52 INFO SparkContext: Successfully stopped SparkContext
+21/03/30 22:38:52 ERROR SparkContext: Error initializing SparkContext.
+org.apache.spark.SparkException: Exception when registering SparkListener
+	at org.apache.spark.SparkContext.setupAndStartListenerBus(SparkContext.scala:2624)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:612)
+	at com.databricks.backend.daemon.driver.DatabricksILoop$$anonfun$4.apply(DatabricksILoop.scala:344)
+	at com.databricks.backend.daemon.driver.DatabricksILoop$$anonfun$4.apply(DatabricksILoop.scala:344)
+	at com.databricks.backend.daemon.driver.ClassLoaders$.withContextClassLoader(ClassLoaders.scala:29)
+	at com.databricks.backend.daemon.driver.DatabricksILoop$.initializeSharedDriverContext(DatabricksILoop.scala:343)
+	at com.databricks.backend.daemon.driver.DatabricksILoop$.getOrCreateSharedDriverContext(DatabricksILoop.scala:274)
+	at com.databricks.backend.daemon.driver.DriverCorral.com$databricks$backend$daemon$driver$DriverCorral$$driverContext(DriverCorral.scala:177)
+	at com.databricks.backend.daemon.driver.DriverCorral.<init>(DriverCorral.scala:214)
+	at com.databricks.backend.daemon.driver.DriverDaemon.<init>(DriverDaemon.scala:35)
+	at com.databricks.backend.daemon.driver.DriverDaemon$.create(DriverDaemon.scala:173)
+	at com.databricks.backend.daemon.driver.DriverDaemon$.wrappedMain(DriverDaemon.scala:178)
+	at com.databricks.DatabricksMain$$anonfun$main$1.apply$mcV$sp(DatabricksMain.scala:94)
+	at com.databricks.DatabricksMain$$anonfun$main$1.apply(DatabricksMain.scala:93)
+	at com.databricks.DatabricksMain$$anonfun$main$1.apply(DatabricksMain.scala:93)
+	at com.databricks.DatabricksMain$$anonfun$1.apply(DatabricksMain.scala:287)
+	at com.databricks.logging.UsageLogging$$anonfun$recordOperation$1.apply(UsageLogging.scala:428)
+	at com.databricks.logging.UsageLogging$$anonfun$withAttributionContext$1.apply(UsageLogging.scala:238)
+	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:58)
+	at com.databricks.logging.UsageLogging$class.withAttributionContext(UsageLogging.scala:233)
+	at com.databricks.DatabricksMain.withAttributionContext(DatabricksMain.scala:63)
+	at com.databricks.logging.UsageLogging$class.withAttributionTags(UsageLogging.scala:275)
+	at com.databricks.DatabricksMain.withAttributionTags(DatabricksMain.scala:63)
+	at com.databricks.logging.UsageLogging$class.recordOperation(UsageLogging.scala:409)
+	at com.databricks.DatabricksMain.recordOperation(DatabricksMain.scala:63)
+	at com.databricks.DatabricksMain.withStartupProfilingData(DatabricksMain.scala:286)
+	at com.databricks.DatabricksMain.main(DatabricksMain.scala:93)
+	at com.databricks.backend.daemon.driver.DriverDaemon.main(DriverDaemon.scala)
+Caused by: org.apache.atlas.AtlasException: Failed to load application properties
+	at org.apache.atlas.ApplicationProperties.get(ApplicationProperties.java:147)
+	at org.apache.atlas.ApplicationProperties.get(ApplicationProperties.java:100)
+	at com.sparkview.spark.atlas.AtlasClientConf.configuration$lzycompute(AtlasClientConf.scala:24)
+	at com.sparkview.spark.atlas.AtlasClientConf.configuration(AtlasClientConf.scala:24)
+	at com.sparkview.spark.atlas.AtlasClientConf.get(AtlasClientConf.scala:49)
+	at com.sparkview.spark.atlas.AtlasClient$.atlasClient(AtlasClient.scala:120)
+	at com.sparkview.spark.atlas.SparkAtlasEventTracker.<init>(SparkAtlasEventTracker.scala:33)
+	at com.sparkview.spark.atlas.SparkAtlasEventTracker.<init>(SparkAtlasEventTracker.scala:37)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.spark.util.Utils$$anonfun$loadExtensions$1.apply(Utils.scala:2957)
+	at org.apache.spark.util.Utils$$anonfun$loadExtensions$1.apply(Utils.scala:2946)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:241)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:241)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at scala.collection.TraversableLike$class.flatMap(TraversableLike.scala:241)
+	at scala.collection.AbstractTraversable.flatMap(Traversable.scala:104)
+	at org.apache.spark.util.Utils$.loadExtensions(Utils.scala:2946)
+	at org.apache.spark.SparkContext$$anonfun$setupAndStartListenerBus$1.apply(SparkContext.scala:2613)
+	at org.apache.spark.SparkContext$$anonfun$setupAndStartListenerBus$1.apply(SparkContext.scala:2612)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.SparkContext.setupAndStartListenerBus(SparkContext.scala:2612)
+	... 27 more
+Caused by: org.apache.commons.configuration.ConversionException: 'atlas.graph.index.search.solr.wait-searcher' doesn't map to a List object: true, a java.lang.Boolean
+	at org.apache.commons.configuration.AbstractConfiguration.getList(AbstractConfiguration.java:1144)
+	at org.apache.commons.configuration.AbstractConfiguration.getList(AbstractConfiguration.java:1109)
+	at org.apache.commons.configuration.AbstractConfiguration.interpolatedConfiguration(AbstractConfiguration.java:1274)
+	at org.apache.atlas.ApplicationProperties.get(ApplicationProperties.java:142)
+	... 51 more
+21/03/30 22:38:52 INFO SparkContext: SparkContext already stopped.
+21/03/30 22:38:52 ERROR DriverDaemon$: XXX Fatal uncaught exception. Terminating driver.
+org.apache.spark.SparkException: Exception when registering SparkListener
+	at org.apache.spark.SparkContext.setupAndStartListenerBus(SparkContext.scala:2624)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:612)
+	at com.databricks.backend.daemon.driver.DatabricksILoop$$anonfun$4.apply(DatabricksILoop.scala:344)
+	at com.databricks.backend.daemon.driver.DatabricksILoop$$anonfun$4.apply(DatabricksILoop.scala:344)
+	at com.databricks.backend.daemon.driver.ClassLoaders$.withContextClassLoader(ClassLoaders.scala:29)
+	at com.databricks.backend.daemon.driver.DatabricksILoop$.initializeSharedDriverContext(DatabricksILoop.scala:343)
+	at com.databricks.backend.daemon.driver.DatabricksILoop$.getOrCreateSharedDriverContext(DatabricksILoop.scala:274)
+	at com.databricks.backend.daemon.driver.DriverCorral.com$databricks$backend$daemon$driver$DriverCorral$$driverContext(DriverCorral.scala:177)
+	at com.databricks.backend.daemon.driver.DriverCorral.<init>(DriverCorral.scala:214)
+	at com.databricks.backend.daemon.driver.DriverDaemon.<init>(DriverDaemon.scala:35)
+	at com.databricks.backend.daemon.driver.DriverDaemon$.create(DriverDaemon.scala:173)
+	at com.databricks.backend.daemon.driver.DriverDaemon$.wrappedMain(DriverDaemon.scala:178)
+	at com.databricks.DatabricksMain$$anonfun$main$1.apply$mcV$sp(DatabricksMain.scala:94)
+	at com.databricks.DatabricksMain$$anonfun$main$1.apply(DatabricksMain.scala:93)
+	at com.databricks.DatabricksMain$$anonfun$main$1.apply(DatabricksMain.scala:93)
+	at com.databricks.DatabricksMain$$anonfun$1.apply(DatabricksMain.scala:287)
+	at com.databricks.logging.UsageLogging$$anonfun$recordOperation$1.apply(UsageLogging.scala:428)
+	at com.databricks.logging.UsageLogging$$anonfun$withAttributionContext$1.apply(UsageLogging.scala:238)
+	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:58)
+	at com.databricks.logging.UsageLogging$class.withAttributionContext(UsageLogging.scala:233)
+	at com.databricks.DatabricksMain.withAttributionContext(DatabricksMain.scala:63)
+	at com.databricks.logging.UsageLogging$class.withAttributionTags(UsageLogging.scala:275)
+	at com.databricks.DatabricksMain.withAttributionTags(DatabricksMain.scala:63)
+	at com.databricks.logging.UsageLogging$class.recordOperation(UsageLogging.scala:409)
+	at com.databricks.DatabricksMain.recordOperation(DatabricksMain.scala:63)
+	at com.databricks.DatabricksMain.withStartupProfilingData(DatabricksMain.scala:286)
+	at com.databricks.DatabricksMain.main(DatabricksMain.scala:93)
+	at com.databricks.backend.daemon.driver.DriverDaemon.main(DriverDaemon.scala)
+Caused by: org.apache.atlas.AtlasException: Failed to load application properties
+	at org.apache.atlas.ApplicationProperties.get(ApplicationProperties.java:147)
+	at org.apache.atlas.ApplicationProperties.get(ApplicationProperties.java:100)
+	at com.sparkview.spark.atlas.AtlasClientConf.configuration$lzycompute(AtlasClientConf.scala:24)
+	at com.sparkview.spark.atlas.AtlasClientConf.configuration(AtlasClientConf.scala:24)
+	at com.sparkview.spark.atlas.AtlasClientConf.get(AtlasClientConf.scala:49)
+	at com.sparkview.spark.atlas.AtlasClient$.atlasClient(AtlasClient.scala:120)
+	at com.sparkview.spark.atlas.SparkAtlasEventTracker.<init>(SparkAtlasEventTracker.scala:33)
+	at com.sparkview.spark.atlas.SparkAtlasEventTracker.<init>(SparkAtlasEventTracker.scala:37)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.spark.util.Utils$$anonfun$loadExtensions$1.apply(Utils.scala:2957)
+	at org.apache.spark.util.Utils$$anonfun$loadExtensions$1.apply(Utils.scala:2946)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:241)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:241)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at scala.collection.TraversableLike$class.flatMap(TraversableLike.scala:241)
+	at scala.collection.AbstractTraversable.flatMap(Traversable.scala:104)
+	at org.apache.spark.util.Utils$.loadExtensions(Utils.scala:2946)
+	at org.apache.spark.SparkContext$$anonfun$setupAndStartListenerBus$1.apply(SparkContext.scala:2613)
+	at org.apache.spark.SparkContext$$anonfun$setupAndStartListenerBus$1.apply(SparkContext.scala:2612)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.SparkContext.setupAndStartListenerBus(SparkContext.scala:2612)
+	... 27 more
+Caused by: org.apache.commons.configuration.ConversionException: 'atlas.graph.index.search.solr.wait-searcher' doesn't map to a List object: true, a java.lang.Boolean
+	at org.apache.commons.configuration.AbstractConfiguration.getList(AbstractConfiguration.java:1144)
+	at org.apache.commons.configuration.AbstractConfiguration.getList(AbstractConfiguration.java:1109)
+	at org.apache.commons.configuration.AbstractConfiguration.interpolatedConfiguration(AbstractConfiguration.java:1274)
+	at org.apache.atlas.ApplicationProperties.get(ApplicationProperties.java:142)
+	... 51 more
+21/03/30 22:38:52 INFO ShutdownHookManager: Shutdown hook called
+21/03/30 22:38:52 INFO ShutdownHookManager: Deleting directory /local_disk0/spark-2941aaf4-1f9c-41e2-9d8f-844020e6c408
+21/03/30 22:38:52 INFO ShutdownHookManager: Deleting directory /local_disk0/tmp/spark-688f1edf-e0e2-41a5-852e-bcc676e0cef2
+21/03/30 22:38:52 INFO ShutdownHookManager: Deleting directory /local_disk0/tmp/spark-4227772a-c8ac-4b4b-9a89-b1ed844b5f3d
