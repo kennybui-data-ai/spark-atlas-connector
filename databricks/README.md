@@ -4,7 +4,7 @@ note the __limitations__ of SAC in the main [readme](../readme.md).
 
 ## patch_spark_model (one-time run)
 [reference code](https://github.com/wjohnson/pyapacheatlas/blob/master/samples/new_lineage_processes_typedefs.py)  
-purview's models are not accessible. we will need to manually create them.  
+purview's VM is not accessible. we will need to manually create the spark model via REST API (`pyapacheatlas`).  
 use `purview_spark.py`. there is an extra copy of `1100-spark_model.json` from the `patch` folder which will be parsed by `purview_spark.py`.
 ```
 python purview_spark.py -h      
@@ -28,8 +28,9 @@ optional arguments:
 ```
 
 ## jar dependencies
-TODO
-- fat jar with no conflicts
+__CONFIRMED:__ spark-atlas-connector-assembly jar works on local as expected
+
+If you want to use the thin jar then be sure to have the following:
 #### atlas version 2.1.0
 - atlas-intg: [maven](https://mvnrepository.com/artifact/org.apache.atlas/atlas-intg/2.1.0)
 - atlas-client-common: [maven](https://mvnrepository.com/artifact/org.apache.atlas/atlas-client-common/2.1.0)

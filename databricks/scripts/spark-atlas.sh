@@ -1,8 +1,14 @@
 #!/bin/bash
+
 # redirect stdout/stderr to a file
-LOG_PATH=/dbfs/databricks/scripts/logfile.txt
+SCRIPT_ROOT=/dbfs/databricks/scripts
+LOG_PATH=$SCRIPT_ROOT/logfile.txt
+
 # sudo rm -f $LOG_PATH
-exec &> $LOG_PATH
+# sudo touch $LOG_PATH
+# exec &> $LOG_PATH
+# exec >> $LOG_PATH
+# exec 2>&1
 
 # echo "hello world"
 # echo "SPARK_CONF_DIR: $SPARK_CONF_DIR"
@@ -10,7 +16,7 @@ exec &> $LOG_PATH
 ########################
 # JARS
 ########################
-INPUT_JARS=/dbfs/databricks/scripts/jars/.
+INPUT_JARS=$SCRIPT_ROOT/jars/.
 JAR_PATH=/databricks/jars/
 # NOTE THE MAVEN JAR DOESN'T SEEM TO BE CORRECTLY PACAKAGED
 # SPARK_ATLAS_URL=https://repository.cloudera.com/artifactory/libs-release-local/com/hortonworks/spark/spark-atlas-connector_2.11/0.1.0.7.2.7.5-1/spark-atlas-connector_2.11-0.1.0.7.2.7.5-1.jar
@@ -20,8 +26,9 @@ JAR_PATH=/databricks/jars/
 # https://askubuntu.com/questions/80065/i-want-to-copy-a-directory-from-one-place-to-another-via-the-command-line
 
 # cp -a /dbfs/FileStore/jars/. /databricks/jars/
-cp -v -a $INPUT_JARS $JAR_PATH
-echo "finished copying jars to $JAR_PATH"
+# cp -v $INPUT_JARS $JAR_PATH
+# ls $INPUT_JARS
+echo "=== finished copying jars to $JAR_PATH"
 
 # wget and curl HANGING
 # wget $SPARK_ATLAS_URL -P $JAR_PATH
@@ -34,7 +41,7 @@ echo "finished copying jars to $JAR_PATH"
 # databricks default is not $SPARK_HOME/conf
 # databricks $SPARK_HOME is actually just the root of the VM, ie - /
 # databricks has conf in subfolders under /databricks
-SPARK_CONF=/databricks/spark/conf
+SPARK_CONF=/databricks/spark/conf/
 # COMMON_CONF=/databricks/common/conf
 # DRIVER_CONF=/databricks/driver/conf
 # DATA_CONF=/databricks/data/conf
@@ -46,16 +53,17 @@ SPARK_CONF=/databricks/spark/conf
 
 
 ATLAS_PROPERTIES_FILE=atlas-application.properties
-INPUT_ATLAS_PROPERTIES=/dbfs/databricks/scripts/$ATLAS_PROPERTIES_FILE
-ATLAS_PROPERTIES_PATH=$SPARK_CONF/$ATLAS_PROPERTIES_FILE
+INPUT_ATLAS_PROPERTIES=$SCRIPT_ROOT/$ATLAS_PROPERTIES_FILE
+# ATLAS_PROPERTIES_PATH=$SPARK_CONF/$ATLAS_PROPERTIES_FILE
 
 # sudo rm -f $ATLAS_PROPERTIES_PATH
 # cp /dbfs/databricks/scripts/atlas-application.properties /databricks/spark/conf/atlas-application.properties
-cp -v $INPUT_ATLAS_PROPERTIES $SPARK_CONF
+# cp -v $INPUT_ATLAS_PROPERTIES $SPARK_CONF
 # cp -v $INPUT_ATLAS_PROPERTIES $COMMON_CONF
 # cp -v $INPUT_ATLAS_PROPERTIES $DRIVER_CONF
 # cp -v $INPUT_ATLAS_PROPERTIES $DATA_CONF
-echo "finished copying atlas properties to conf folders"
+# ls $SCRIPT_ROOT
+echo "=== finished copying atlas properties to conf folders"
 
 # creating file with echo is HANGING
 # echo 'atlas.client.type=rest' > $ATLAS_PROPERTIES_PATH
