@@ -11,3 +11,4 @@ dependency-reduced-pom.xml
 *.classpath
 # *.jar
 databricks/country_vaccinations_output
+bin
