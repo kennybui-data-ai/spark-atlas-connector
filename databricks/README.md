@@ -1,6 +1,6 @@
 # spark-atlas-connector for databricks & purview
 attempting to automatically capture databricks lineage in purview.  
-note the __limitations__ of SAC in the main [readme](../readme.md).
+note the __limitations__ of SAC in the main [readme](../README.md).
 
 ## patch_spark_model (one-time run)
 [reference code](https://github.com/wjohnson/pyapacheatlas/blob/master/samples/new_lineage_processes_typedefs.py)  
