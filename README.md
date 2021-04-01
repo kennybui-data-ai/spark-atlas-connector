@@ -24,7 +24,7 @@ date | author | comment
 
 Azure: Databricks & Purview
 ===
-refer to [readme](./databricks/readme.md) in databricks folder.
+refer to [readme](databricks/readme.md) in databricks folder.
 
 How To Build
 ==========
