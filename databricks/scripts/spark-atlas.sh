@@ -18,8 +18,8 @@ exec &> $LOGFILE
 echo "HELLO WORLD"
 
 # JAR PATHS
-INPUT_JARS=$SCRIPT_ROOT/jars/
-JAR_PATH=/databricks/jars/
+INPUT_JARS=$SCRIPT_ROOT/jars/*
+JAR_PATH=/databricks/jars
 
 cp -vR $INPUT_JARS $JAR_PATH
 echo "=== finished copying jars to $JAR_PATH"

@@ -59,7 +59,7 @@ databricks fs cat dbfs:/databricks/scripts/spark-atlas.sh
 databricks fs cat dbfs:/databricks/scripts/logfile.txt
 ```
 #### spark-atlas.sh template
-__NOTE:__ if you are getting `init script exit status non-zero` when starting the databricks cluster with init script, this very likely due to [lack of Unix-style line endings](https://github.com/dotnet/spark/issues/183).  
+__NOTE:__ if you are getting `init script exit status non-zero` when starting the databricks cluster with init script, it is very likely due to [lack of Unix-style line endings](https://github.com/dotnet/spark/issues/183).  
 Ensure you enable [cluster log delivery](https://docs.databricks.com/clusters/configure.html#cluster-log-delivery) in advanced options for [easier debugging of init scripts](https://docs.databricks.com/clusters/init-scripts.html#init-script-logs). The stderr.log will show `$'\r': command not found`.  
 If using VSCode, [change the line endings for the file](https://stackoverflow.com/questions/39525417/visual-studio-code-how-to-show-line-endings) from CRLF to LF. This can also be done for the workspace via `Files > Preferences > Settings > Files: Eol > \n`.
 ```bash
@@ -77,8 +77,8 @@ exec &> $LOG_PATH
 ########################
 # JARS
 ########################
-INPUT_JARS=$SCRIPT_ROOT/jars/.
-JAR_PATH=/databricks/jars/
+INPUT_JARS=$SCRIPT_ROOT/jars/*
+JAR_PATH=/databricks/jars
 # NOTE THE MAVEN JAR DOESN'T SEEM TO BE CORRECTLY PACAKAGED
 # SPARK_ATLAS_URL=https://repository.cloudera.com/artifactory/libs-release-local/com/hortonworks/spark/spark-atlas-connector_2.11/0.1.0.7.2.7.5-1/spark-atlas-connector_2.11-0.1.0.7.2.7.5-1.jar
 

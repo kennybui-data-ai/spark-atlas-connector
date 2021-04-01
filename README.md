@@ -20,6 +20,7 @@ date | author | comment
 --- | --- | ---
 30 march 2021 | Kenny Bui | added src/main/java files for atlas client. modifed RestAtlasClient accordingly. also modified pom.xml for dependencies, shading, assembly.
 31 march 2021 | Kenny Bui | modify atlas-application.properties. add ApplicationProperties.java, AuthenticationUtil.java, and commons-configuration dependency in pom.xml
+1 april 2021 | Kenny Bui | SAC assembly jar works in Databricks spark 2.4.5 / scala 2.11
 
 Azure: Databricks & Purview
 ===
