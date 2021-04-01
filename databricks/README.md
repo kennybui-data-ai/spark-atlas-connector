@@ -28,8 +28,7 @@ optional arguments:
 ```
 
 ## jar dependencies
-__CONFIRMED:__ spark-atlas-connector-assembly jar works on local as expected
-
+__CONFIRMED:__ spark-atlas-connector-assembly jar works on local as expected  
 If you want to use the thin jar then be sure to have the following:
 #### atlas version 2.1.0
 - atlas-intg: [maven](https://mvnrepository.com/artifact/org.apache.atlas/atlas-intg/2.1.0)
@@ -60,19 +59,17 @@ databricks fs cat dbfs:/databricks/scripts/spark-atlas.sh
 databricks fs cat dbfs:/databricks/scripts/logfile.txt
 ```
 #### spark-atlas.sh template
-__NOTE:__ if you are getting `init exit status non-zero` when starting the databricks cluster with init script, this very likely due to [non-Unix-style line endings](https://github.com/dotnet/spark/issues/183). Try trimming trailing whitespace, and potentially re-creating the script from scratch.
+__NOTE:__ if you are getting `init script exit status non-zero` when starting the databricks cluster with init script, this very likely due to [lack of Unix-style line endings](https://github.com/dotnet/spark/issues/183).  
+Ensure you enable [cluster log delivery](https://docs.databricks.com/clusters/configure.html#cluster-log-delivery) in advanced options for [easier debugging of init scripts](https://docs.databricks.com/clusters/init-scripts.html#init-script-logs). The stderr.log will show `$'\r': command not found`.  
+If using VSCode, [change the line endings for the file](https://stackoverflow.com/questions/39525417/visual-studio-code-how-to-show-line-endings) from CRLF to LF. This can also be done for the workspace via `Files > Preferences > Settings > Files: Eol > \n`.
 ```bash
-#!/bin/bash
+#!/bin/sh
 
-# redirect stdout/stderr to a file
 SCRIPT_ROOT=/dbfs/databricks/scripts
 LOG_PATH=$SCRIPT_ROOT/logfile.txt
 
-# sudo rm -f $LOG_PATH
-# sudo touch $LOG_PATH
-# exec &> $LOG_PATH
-# exec >> $LOG_PATH
-# exec 2>&1
+# redirect stdout/stderr to a file
+exec &> $LOG_PATH
 
 # echo "hello world"
 # echo "SPARK_CONF_DIR: $SPARK_CONF_DIR"
@@ -159,6 +156,8 @@ spark.executor.extraJavaOptions -Datlas.conf=/databricks/spark/conf
 spark.extraListeners com.sparkview.spark.atlas.SparkAtlasEventTracker
 spark.sql.queryExecutionListeners com.sparkview.spark.atlas.SparkAtlasEventTracker
 spark.sql.streaming.streamingQueryListeners com.sparkview.spark.atlas.SparkAtlasStreamingQueryEventTracker
+spark.driver.extraClassPath /databricks/jars/spark-atlas-connector-assembly-0.1.1.jar
+spark.executor.extraClassPath /databricks/jars/spark-atlas-connector-assembly-0.1.1.jar
 ```
 ### environment variables
 ```

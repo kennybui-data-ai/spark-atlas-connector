@@ -512,6 +512,8 @@
                     <exclude>org.apache.hadoop.hbase:*</exclude>
                     <exclude>com.google.inject:*</exclude>
                     <exclude>com.google.code.findbugs:*</exclude>
+                    <exclude>com.google.guava:*</exclude>
+                    <exclude>com.google.protobuf:*</exclude>
                   </excludes>
                 </artifactSet>
                 <relocations>
